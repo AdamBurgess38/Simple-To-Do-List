@@ -27,6 +27,12 @@ type GetRequest struct{
 	ExceriseName string `json:exceriseName`
 }
 
+type DeleteRequest struct{
+	WholeExcerise bool `json:wholeExcerise`
+	ID int `json:ID`
+	ExceriseName string `json:exceriseName`
+}
+
 func initaliseListOfKeys(){
 	var kys []string
 	for key, _ := range userInfo.Exercises{
@@ -163,7 +169,6 @@ func userRequestToViewAnExercise(){
 	fmt.Println(exercise.ViewAnExercise(userInfo, currentExercise, choice))
 }
 
-//Need to change the way the date is inputted here...
 func addNewExerciseInstant(c *fiber.Ctx) error{
 	userInput := &exercise.UserInput{}
 
@@ -175,13 +180,35 @@ func addNewExerciseInstant(c *fiber.Ctx) error{
 	if(exercise.UserRequestNewIteration(userInfo, currentExercise, *exercise.UserTempIteration(userInput.Reps, userInput.Weights, userInput.Sets, userInput.Weight, 
 		userInput.DaysAgo ,userInput.Note))){
 			fmt.Println("Instance of ", currentExercise ," has been successfully added")
-			if(exists){
+			if(!exists){
 				initaliseListOfKeys()
 			}
 			return c.SendString("OK")
 	}
 	return c.Status(401).SendString("Error creating exercise") ;
 	
+}
+
+func deleteEntireExercise(c *fiber.Ctx) error{
+	deleteRequest := &DeleteRequest{}
+	if err := c.BodyParser(deleteRequest); err != nil{
+		return c.Status(400).SendString("Invalid body")
+	}
+	exists := findExercise(deleteRequest.ExceriseName)
+	if(!exists){
+		return c.Status(400).SendString("Invalid exercise")
+	}
+	if(!deleteRequest.WholeExcerise){
+			if (exercise.UserDeletionRequest(userInfo, deleteRequest.ID, currentExercise, exercise.ExerciseInstance)) {
+				fmt.Printf("Exercise instance deletion successful\n") 
+				return c.SendString("OK");
+			}
+			fmt.Printf("Exercise instance deletion unsuccessful, couldn't find ID\n")
+			return c.Status(400).SendString("Invalid ID");
+	}
+	exercise.UserDeletionRequest(userInfo, 0, currentExercise, exercise.EntireExercise)
+	initaliseListOfKeys()
+	return c.SendString("OK");
 }
 
 func userGetsAllExerciseNames(c *fiber.Ctx) error{
@@ -273,6 +300,7 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/api/getJSONOfExcerise", getJSONOfExcerise)
 	app.Get("/api/getJSONOfExceriseAll", getJSONOfExceriseAll)
 	app.Post("/api/addNewExerciseInstant", addNewExerciseInstant)
+	app.Post("/api/deleteEntireExercise", deleteEntireExercise)
 }
 
 func main(){

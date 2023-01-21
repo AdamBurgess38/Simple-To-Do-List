@@ -1,7 +1,6 @@
 package exercise
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 	"time"
@@ -187,13 +186,10 @@ func initialiseExcerise(ue *UsersExercise,name string){
 }
 
 func addIteration(ue *UsersExercise, name string, x Iteration){
-	fmt.Println(x)
 	entry, ok := ue.Exercises[name];
-	fmt.Println(entry)
 	if ok {
 		entry.Iterations = append(entry.Iterations,x)
 	}	
-	fmt.Println(entry)
 	ue.Exercises[name] = entry;
 }
 

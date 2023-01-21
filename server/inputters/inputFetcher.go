@@ -32,7 +32,6 @@ func FetchDouble(statement string) float64{
 			fmt.Printf("Enter a valid double\n");
 			continue;
 		}
-		// fmt.Println(returnValue)
 		valueFound = true;
 	}
 	return returnValue;
