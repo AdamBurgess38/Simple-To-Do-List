@@ -40,6 +40,7 @@ type Iteration struct {
 
 type StatsFormat int64
 
+//0...n
 const (
 	StandardStats StatsFormat = iota
 	AverageOverall     

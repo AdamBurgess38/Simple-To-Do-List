@@ -24,6 +24,11 @@ type ToDo struct{
 	Done bool `json:done`
 }
 
+type GetRequest struct{
+	StatsFormat int `json:statsFormat`
+	ExceriseName string `json:exceriseName`
+}
+
 func initaliseListOfKeys(){
 	var kys []string
 	for key, _ := range userInfo.Exercises{
@@ -147,6 +152,9 @@ func userInputNewExercise(){
 	
 }
 
+/*
+Backend only version.
+*/
 func userRequestToViewAnExercise(){
 	exists := updateCurrentExercise("What exercise would you like to view?")
 	if(!exists){
@@ -154,6 +162,31 @@ func userRequestToViewAnExercise(){
 	}
 	choice := exercise.StatsFormat(inputters.FetchInteger("What format would you like?\n[1] Standard stats [2] Average overall [3] Simple stats  [4] Most recent", 4)-1);
 	fmt.Println(exercise.ViewAnExercise(userInfo, currentExercise, choice))
+}
+
+
+func userGetsAllExerciseNames(c *fiber.Ctx) error{
+	return c.JSON(keys)
+}
+/*
+	Just spits out the data to the user...could be useful from a logging point of view for them
+	Therefore this is in a non JSON format and is very simple
+*/
+func userRequestToViewExerciseLog(c *fiber.Ctx) error{
+	getRequest := &GetRequest{}
+	if err := c.BodyParser(getRequest); err != nil{
+		return err;
+	}
+	exists := findExercise(getRequest.ExceriseName)
+	if(!exists){
+		fmt.Printf("This exercise does not exist in your records, sorry");
+	}
+	fmt.Printf("we get to here")
+	choice := exercise.StatsFormat(getRequest.StatsFormat)
+	repsone := exercise.ViewAnExercise(userInfo, currentExercise, choice)
+	fmt.Println(repsone)
+
+	return c.JSON(repsone)
 }
 
 func userRequestToViewAllExercises(){
@@ -211,6 +244,10 @@ func tempLoadUser() * exercise.UsersExercise{
 		return ue;
 	}
 
+func setupRoutes(app *fiber.App) {
+	app.Get("/api/getExerciseLog", userRequestToViewExerciseLog)
+	app.Get("/api/getExerciseAll", userGetsAllExerciseNames)
+}
 
 func main(){
 	userInfo = tempLoadUser()
@@ -233,6 +270,8 @@ func main(){
 	app.Get("/healthcheck", func(c *fiber.Ctx) error{
 		return c.SendString("OK")
 	})
+
+	setupRoutes(app)
 
 	app.Post("/api/todos", func(c *fiber.Ctx) error{
 		todo := &ToDo{}
