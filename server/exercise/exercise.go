@@ -3,6 +3,8 @@ package exercise
 import (
 	"fmt"
 	"strconv"
+	"strings"
+	"time"
 )
 
 type UsersExercise struct{
@@ -14,17 +16,18 @@ type Exercise struct {
     Iterations []Iteration
 }
 
-type userInput struct {
-	Reps []float64
-	Weights []float64
-	Sets int
-	Weight float64
-	Date string
-	Note string
+type UserInput struct {
+	ExceriseName string `json:"name"`;
+	Reps []float64 `json:"reps"`
+	Weights []float64 `json:"weights"`
+	Sets int `json:"sets"`
+	Weight float64 `json:"weight"`
+	DaysAgo int `json:"daysAgo"`
+	Note string `json:"note"`
 }
 
 type Iteration struct {
-	Reps []float64
+	Reps []float64 
 	Weights []float64
 	Variances []float64
 	ID int
@@ -76,6 +79,19 @@ func ViewAnExercise(ue *UsersExercise, requestedExercise string, t StatsFormat) 
 func BoltOnSeperator() string{
 	return "-----------------------------------------------------------\n";
 } 
+
+func FetchExerciseObject(ue *UsersExercise, requestedExercise string) []Iteration{
+	entry, ok := ue.Exercises[requestedExercise];	
+	if !ok {
+		return []Iteration{};
+	}
+	return generateExerciseObject(entry)
+}
+
+func generateExerciseObject(ex Exercise) []Iteration{
+	return ex.Iterations;
+
+}
 
 func fetchStandardStats(ex Exercise) string{
 	returnString := ""
@@ -136,14 +152,14 @@ func arrayToString(array []float64) string{
 
 }
 
-func UserTempIteration(reps, weights []float64, sets int, weight float64, date string, note string) *userInput{
+func UserTempIteration(reps, weights []float64, sets int, weight float64, dateDifference int, note string) *UserInput{
 	return &(
-		userInput{
+		UserInput{
 			Reps: reps, 
 			Weights: weights, 
 			Sets : sets, 
 			Weight: weight,
-			Date: date,
+			DaysAgo: dateDifference,
 			Note: note,
 			});
 }
@@ -173,10 +189,11 @@ func initialiseExcerise(ue *UsersExercise,name string){
 func addIteration(ue *UsersExercise, name string, x Iteration){
 	fmt.Println(x)
 	entry, ok := ue.Exercises[name];
+	fmt.Println(entry)
 	if ok {
 		entry.Iterations = append(entry.Iterations,x)
 	}	
-
+	fmt.Println(entry)
 	ue.Exercises[name] = entry;
 }
 
@@ -188,7 +205,7 @@ func Map[T, V any](ts []T, fn func(T) V) []V {
     return result
 }
 
-func UserRequestNewIteration(ue *UsersExercise, name string, x userInput) bool{
+func UserRequestNewIteration(ue *UsersExercise, name string, x UserInput) bool{
 	if(len(x.Reps) != len(x.Weights)){
 		return false;
 	}
@@ -223,13 +240,10 @@ func UserRequestNewIteration(ue *UsersExercise, name string, x userInput) bool{
 
 	addIteration(ue, name, *NewIteration(
 		x.Reps, x.Weights, Map(x.Weights, func(item float64) float64 { return item - x.Weight }), newID, 
-		x.Sets, 
+		len(x.Reps), 
 		x.Weight, 
-		x.Date, 
+		strings.Replace((time.Now().Local().AddDate(0, 0, -x.DaysAgo)).Format("01-02-2006"),"/", ":", 2), 
 		x.Note, totalWeightRep, totalReps/float64(len(x.Reps)), totalWeight/float64(len(x.Weights)), totalWeightRep/float64(len(x.Weights))))
-
-	// fmt.Println(ViewAnExercise(ue,"Barbell Bench" , MostRecent))
-
 	return true;
 }
 

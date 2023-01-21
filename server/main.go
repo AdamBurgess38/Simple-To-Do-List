@@ -10,8 +10,6 @@ import (
 	"packages/sort"
 	"packages/startup"
 	"strconv"
-	"strings"
-	"time"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -61,18 +59,19 @@ var keys []string
 /*
 Returns false is the current excerise doesn't exist
 */
-func updateCurrentExercise(statement string) bool{
-	return findExercise(inputters.FetchString(statement));
+func updateCurrentExercise(newName string) bool{
+	return findExercise(newName);
 }
 
 func findExercise(exerciseRequested string) bool {
 	for v, d := range keys{
-		// fmt.Println(v, exerciseRequested, d)
+		fmt.Println(v, exerciseRequested, d)
 		if(strconv.Itoa(v) == exerciseRequested || d == exerciseRequested){
 			currentExercise = d;
 			return true;
 		}
 	}
+	currentExercise = exerciseRequested;
 	return false;
 }
 
@@ -132,7 +131,7 @@ func userInputNewExercise(){
 		reps = inputters.FetchArray("Please state the reps throughout the sets")
 		weights = inputters.FetchArray("Please state the weight throughout the sets")
 	}
-
+	sets = len(reps);
 	var note string = ""
 	if(inputters.FetchBoolean("Would you like to leave a note?")){
 		note += inputters.FetchString("Please enter what you would like the note to be?")
@@ -143,7 +142,7 @@ func userInputNewExercise(){
 		daysAgo = inputters.FetchInteger("How many days ago did you perform this exercise?", 365);
 	}
 	if(exercise.UserRequestNewIteration(userInfo, currentExercise, *exercise.UserTempIteration(reps, weights, sets, weight, 
-		strings.Replace((time.Now().Local().AddDate(0, 0, -daysAgo)).Format("01-02-2006"),"/", ":", 2),note))){
+		-daysAgo,note))){
 			fmt.Println("Instance of " , currentExercise , " has been successfully added")
 			return;
 	}
@@ -164,10 +163,47 @@ func userRequestToViewAnExercise(){
 	fmt.Println(exercise.ViewAnExercise(userInfo, currentExercise, choice))
 }
 
+//Need to change the way the date is inputted here...
+func addNewExerciseInstant(c *fiber.Ctx) error{
+	userInput := &exercise.UserInput{}
+
+	if err := c.BodyParser(userInput); err != nil{
+			return err;
+	}
+	exists := updateCurrentExercise(userInput.ExceriseName);
+	
+	if(exercise.UserRequestNewIteration(userInfo, currentExercise, *exercise.UserTempIteration(userInput.Reps, userInput.Weights, userInput.Sets, userInput.Weight, 
+		userInput.DaysAgo ,userInput.Note))){
+			fmt.Println("Instance of ", currentExercise ," has been successfully added")
+			if(exists){
+				initaliseListOfKeys()
+			}
+			return c.SendString("OK")
+	}
+	return c.Status(401).SendString("Error creating exercise") ;
+	
+}
 
 func userGetsAllExerciseNames(c *fiber.Ctx) error{
 	return c.JSON(keys)
 }
+
+func getJSONOfExceriseAll(c *fiber.Ctx) error{
+	return c.JSON(userInfo.Exercises)
+}
+
+func getJSONOfExcerise(c *fiber.Ctx) error{
+	getRequest := &GetRequest{}
+	if err := c.BodyParser(getRequest); err != nil{
+		return err;
+	}
+	exists := findExercise(getRequest.ExceriseName)
+	if(!exists){
+		return c.Status(401).SendString("Invalid exercise")
+	}
+	return c.JSON(exercise.FetchExerciseObject(userInfo, currentExercise))
+}
+
 /*
 	Just spits out the data to the user...could be useful from a logging point of view for them
 	Therefore this is in a non JSON format and is very simple
@@ -177,29 +213,13 @@ func userRequestToViewExerciseLog(c *fiber.Ctx) error{
 	if err := c.BodyParser(getRequest); err != nil{
 		return err;
 	}
-	exists := findExercise(getRequest.ExceriseName)
+	exists := updateCurrentExercise(getRequest.ExceriseName)
 	if(!exists){
-		fmt.Printf("This exercise does not exist in your records, sorry");
+		return c.Status(401).SendString("Invalid exercise")
 	}
-	fmt.Printf("we get to here")
-	choice := exercise.StatsFormat(getRequest.StatsFormat)
-	repsone := exercise.ViewAnExercise(userInfo, currentExercise, choice)
-	fmt.Println(repsone)
-
-	return c.JSON(repsone)
+	return c.JSON(exercise.ViewAnExercise(userInfo, currentExercise, exercise.StatsFormat(getRequest.StatsFormat)));
 }
 
-func userRequestToViewAllExercises(){
-	choice := inputters.FetchInteger("[1] All names [2] All iterations of every exercise",2)
-	if(choice == 1){
-		printAllExceriseNames()
-		return; 
-	}
-	for _, d := range keys{
-		fmt.Println("Exercise " , d, "Instances:\n" ,exercise.ViewAnExercise(userInfo, d, exercise.StandardStats))
-	}
-
-}
 
 func coreFunctionLoop(){
 	var choice int
@@ -213,7 +233,7 @@ func coreFunctionLoop(){
 		case 3:
 			userInputDeleteExercise()
 		case 4:
-			userRequestToViewAllExercises()
+			//userRequestToViewAllExercises()
 		case 5:
 			startup.SaveUser(userInfo)
 		}
@@ -245,8 +265,14 @@ func tempLoadUser() * exercise.UsersExercise{
 	}
 
 func setupRoutes(app *fiber.App) {
+	app.Get("/healthcheck", func(c *fiber.Ctx) error{
+		return c.SendString("OK")
+	})
 	app.Get("/api/getExerciseLog", userRequestToViewExerciseLog)
 	app.Get("/api/getExerciseAll", userGetsAllExerciseNames)
+	app.Get("/api/getJSONOfExcerise", getJSONOfExcerise)
+	app.Get("/api/getJSONOfExceriseAll", getJSONOfExceriseAll)
+	app.Post("/api/addNewExerciseInstant", addNewExerciseInstant)
 }
 
 func main(){
@@ -267,9 +293,7 @@ func main(){
 
 	//fmt.Println(todos[0])
 
-	app.Get("/healthcheck", func(c *fiber.Ctx) error{
-		return c.SendString("OK")
-	})
+	
 
 	setupRoutes(app)
 
