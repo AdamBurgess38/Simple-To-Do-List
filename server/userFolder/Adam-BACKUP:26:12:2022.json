@@ -1,0 +1,6259 @@
+{
+ "Exercises": {
+  "Alt Lat Pulldown": {
+   "ID": 0,
+   "Iterations": [
+    {
+     "Reps": [
+      10,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      55,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "16/09/2022",
+     "Note": "",
+     "TotalWeight": 2470,
+     "AverageWeight": 59,
+     "AverageRep": 8.4,
+     "AverageWeightRepTotal": 494
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "21/09/2022",
+     "Note": "",
+     "TotalWeight": 2400,
+     "AverageWeight": 60,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 480
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      65,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "07/10/2022",
+     "Note": "",
+     "TotalWeight": 2440,
+     "AverageWeight": 61,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 488
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      9,
+      9
+     ],
+     "Weights": [
+      60,
+      60,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 4,
+     "Weight": 60,
+     "Date": "27/10/2022",
+     "Note": "",
+     "TotalWeight": 2130,
+     "AverageWeight": 62.5,
+     "AverageRep": 8.5,
+     "AverageWeightRepTotal": 532.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      60,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "06/11/2022",
+     "Note": "",
+     "TotalWeight": 2520,
+     "AverageWeight": 63,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 504
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "27/11/2022",
+     "Note": "",
+     "TotalWeight": 2600,
+     "AverageWeight": 65,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 520
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      65,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "06/12/2022",
+     "Note": "",
+     "TotalWeight": 2640,
+     "AverageWeight": 66,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 528
+    }
+   ]
+  },
+  "Arnold Press": {
+   "ID": 1,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      35,
+      40,
+      40,
+      35,
+      35
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 35,
+     "Date": "24/6/2022",
+     "Note": "",
+     "TotalWeight": 1480,
+     "AverageWeight": 37,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 296
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      35,
+      35,
+      35
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "05/7/2022",
+     "Note": "Just recovering from covid, also had a mask on. Did feel heavy 40kg however. ",
+     "TotalWeight": 1480,
+     "AverageWeight": 37,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 296
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      35
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "13/08/2022",
+     "Note": "",
+     "TotalWeight": 1480,
+     "AverageWeight": 39,
+     "AverageRep": 7.6,
+     "AverageWeightRepTotal": 296
+    },
+    {
+     "Reps": [
+      25,
+      16,
+      17
+     ],
+     "Weights": [
+      25,
+      25,
+      25
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 3,
+     "Weight": 25,
+     "Date": "21/08/2022",
+     "Note": "",
+     "TotalWeight": 1450,
+     "AverageWeight": 25,
+     "AverageRep": 19.333334,
+     "AverageWeightRepTotal": 483.33334
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      35,
+      35,
+      35
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 35,
+     "Date": "06/09/2022",
+     "Note": "Did it standing",
+     "TotalWeight": 1480,
+     "AverageWeight": 37,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 296
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      7,
+      8,
+      6
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "13/09/2022",
+     "Note": "Decent, let's keep at this weight and bring the reps all to 8!",
+     "TotalWeight": 1480,
+     "AverageWeight": 40,
+     "AverageRep": 7.4,
+     "AverageWeightRepTotal": 296
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 30,
+     "Date": "20/09/2022",
+     "Note": "",
+     "TotalWeight": 1800,
+     "AverageWeight": 30,
+     "AverageRep": 12,
+     "AverageWeightRepTotal": 360
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      7.25
+     ],
+     "Weights": [
+      35,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "30/09/2022",
+     "Note": "",
+     "TotalWeight": 1530,
+     "AverageWeight": 39,
+     "AverageRep": 7.85,
+     "AverageWeightRepTotal": 306
+    },
+    {
+     "Reps": [
+      20,
+      12,
+      15,
+      12
+     ],
+     "Weights": [
+      25,
+      25,
+      25,
+      25
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 4,
+     "Weight": 25,
+     "Date": "08/10/2022",
+     "Note": "",
+     "TotalWeight": 1475,
+     "AverageWeight": 25,
+     "AverageRep": 14.75,
+     "AverageWeightRepTotal": 368.75
+    },
+    {
+     "Reps": [
+      7,
+      8,
+      7,
+      8,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "12/10/2022",
+     "Note": "",
+     "TotalWeight": 1520,
+     "AverageWeight": 40,
+     "AverageRep": 7.6,
+     "AverageWeightRepTotal": 304
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      45,
+      45,
+      45,
+      45,
+      45
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 45,
+     "Date": "22/10/2022",
+     "Note": "",
+     "TotalWeight": 1125,
+     "AverageWeight": 45,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 225
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "04/11/2022",
+     "Note": "",
+     "TotalWeight": 1600,
+     "AverageWeight": 40,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 320
+    },
+    {
+     "Reps": [
+      8,
+      6,
+      6,
+      6,
+      4
+     ],
+     "Weights": [
+      45,
+      45,
+      45,
+      45,
+      45
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 45,
+     "Date": "19/11/2022",
+     "Note": "",
+     "TotalWeight": 1350,
+     "AverageWeight": 45,
+     "AverageRep": 6,
+     "AverageWeightRepTotal": 270
+    },
+    {
+     "Reps": [
+      12,
+      10,
+      10,
+      10,
+      9
+     ],
+     "Weights": [
+      35,
+      35,
+      35,
+      35,
+      35
+     ],
+     "Variances": null,
+     "ID": 14,
+     "Sets": 5,
+     "Weight": 35,
+     "Date": "05/12/2022",
+     "Note": "",
+     "TotalWeight": 1785,
+     "AverageWeight": 35,
+     "AverageRep": 10.2,
+     "AverageWeightRepTotal": 357
+    }
+   ]
+  },
+  "Barbell Bench": {
+   "ID": 2,
+   "Iterations": [
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75,
+      60
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 6,
+     "Weight": 75,
+     "Date": "02/5/2022",
+     "Note": "",
+     "TotalWeight": 2355,
+     "AverageWeight": 72.5,
+     "AverageRep": 5.5,
+     "AverageWeightRepTotal": 392.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      5
+     ],
+     "Weights": [
+      67.5,
+      67.5,
+      67.5,
+      67.5,
+      67.5
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 67.5,
+     "Date": "07/5/2022",
+     "Note": "Good at the start, need to focus on form more",
+     "TotalWeight": 2362.5,
+     "AverageWeight": 67.5,
+     "AverageRep": 7,
+     "AverageWeightRepTotal": 472.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      67.5,
+      67.5,
+      67.5,
+      67.5,
+      67.5
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 67.5,
+     "Date": "10/5/2022",
+     "Note": "Got to do this weight again, left shoulder hurt towards the end because of form",
+     "TotalWeight": 2700,
+     "AverageWeight": 67.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 540
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      77.5,
+      77.5,
+      77.5,
+      77.5,
+      77.5
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 77.5,
+     "Date": "14/5/2022",
+     "Note": "Do again so it's smoother, was ok though",
+     "TotalWeight": 1937.5,
+     "AverageWeight": 77.5,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 387.5
+    },
+    {
+     "Reps": [
+      5,
+      2,
+      8,
+      8,
+      5
+     ],
+     "Weights": [
+      77.5,
+      77.5,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "20/5/2022",
+     "Note": "Very werid, think i am tired",
+     "TotalWeight": 2012.5,
+     "AverageWeight": 73,
+     "AverageRep": 5.6,
+     "AverageWeightRepTotal": 402.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      8
+     ],
+     "Weights": [
+      65,
+      70,
+      70,
+      70,
+      65
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "30/5/2022",
+     "Note": "Was the only thing I did in the workout, come on Adam better next time",
+     "TotalWeight": 2580,
+     "AverageWeight": 68,
+     "AverageRep": 7.6,
+     "AverageWeightRepTotal": 516
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      77.5,
+      77.5,
+      77.5,
+      77.5,
+      77.5
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 77.5,
+     "Date": "04/6/2022",
+     "Note": "Keep doing this for a bit, but introduce a double 80kg. Need to smash out 70 8 by 5 also next",
+     "TotalWeight": 1937.5,
+     "AverageWeight": 77.5,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 387.5
+    },
+    {
+     "Reps": [
+      4,
+      3,
+      3,
+      3,
+      3
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "12/6/2022",
+     "Note": "Keep going despite the knee, and do knees over toes",
+     "TotalWeight": 1280,
+     "AverageWeight": 80,
+     "AverageRep": 3.2,
+     "AverageWeightRepTotal": 256
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "16/6/2022",
+     "Note": "Next time...one set of 72.5 for 8 reps...or maybe two sets :)",
+     "TotalWeight": 2800,
+     "AverageWeight": 70,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 560
+    },
+    {
+     "Reps": [
+      5,
+      4,
+      3,
+      3,
+      3
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "20/6/2022",
+     "Note": "",
+     "TotalWeight": 1440,
+     "AverageWeight": 80,
+     "AverageRep": 3.6,
+     "AverageWeightRepTotal": 288
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      5
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "24/6/2022",
+     "Note": "Try it a bit wider next time",
+     "TotalWeight": 2682.5,
+     "AverageWeight": 72.5,
+     "AverageRep": 7.4,
+     "AverageWeightRepTotal": 536.5
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "01/7/2022",
+     "Note": "Should be able to do 77.5 easily next time...next time is 72.5kg 8 reps however",
+     "TotalWeight": 1875,
+     "AverageWeight": 75,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 375
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      7,
+      5
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "05/7/2022",
+     "Note": "Just recovering from Covid. Also had a mask on, hopefully therefore 72.5 8 reps 5 sets can still happen soon",
+     "TotalWeight": 2580,
+     "AverageWeight": 71.5,
+     "AverageRep": 7.2,
+     "AverageWeightRepTotal": 516
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      3
+     ],
+     "Weights": [
+      77.5,
+      77.5,
+      77.5,
+      77.5,
+      77.5
+     ],
+     "Variances": null,
+     "ID": 14,
+     "Sets": 5,
+     "Weight": 77.5,
+     "Date": "09/7/2022",
+     "Note": "We can do better next time :)",
+     "TotalWeight": 1782.5,
+     "AverageWeight": 77.5,
+     "AverageRep": 4.6,
+     "AverageWeightRepTotal": 356.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      5,
+      2
+     ],
+     "Weights": [
+      72.5,
+      70,
+      70,
+      70,
+      70,
+      80
+     ],
+     "Variances": null,
+     "ID": 15,
+     "Sets": 6,
+     "Weight": 70,
+     "Date": "13/08/2022",
+     "Note": "Be. Better.",
+     "TotalWeight": 2770,
+     "AverageWeight": 72.083336,
+     "AverageRep": 6.5,
+     "AverageWeightRepTotal": 461.66666
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      3
+     ],
+     "Weights": [
+      77.5,
+      77.5,
+      77.5,
+      77.5,
+      77.5,
+      80
+     ],
+     "Variances": null,
+     "ID": 16,
+     "Sets": 6,
+     "Weight": 77.5,
+     "Date": "21/08/2022",
+     "Note": "",
+     "TotalWeight": 2177.5,
+     "AverageWeight": 77.916664,
+     "AverageRep": 4.6666665,
+     "AverageWeightRepTotal": 362.91666
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12,
+      10,
+      10,
+      1
+     ],
+     "Weights": [
+      60,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      82.5
+     ],
+     "Variances": null,
+     "ID": 17,
+     "Sets": 6,
+     "Weight": 62.5,
+     "Date": "25/08/2022",
+     "Note": "Higher rep was fun, didn't do much in the workout overall though!",
+     "TotalWeight": 3552.5,
+     "AverageWeight": 65.416664,
+     "AverageRep": 9.5,
+     "AverageWeightRepTotal": 592.0833
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      7
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 18,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "02/09/2022",
+     "Note": "Hand is hurting. Hopefully this is better son!",
+     "TotalWeight": 2730,
+     "AverageWeight": 70,
+     "AverageRep": 7.8,
+     "AverageWeightRepTotal": 546
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      77.5,
+      77.5,
+      77.5,
+      77.5,
+      77.5
+     ],
+     "Variances": null,
+     "ID": 19,
+     "Sets": 5,
+     "Weight": 77.5,
+     "Date": "06/09/2022",
+     "Note": "First gym session after starting my graduate job...felt good to be honest, not as good as normal but still decent",
+     "TotalWeight": 1937.5,
+     "AverageWeight": 77.5,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 387.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 20,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "10/09/2022",
+     "Note": "Nice! Let's build this up to do it quicker and with better form!",
+     "TotalWeight": 2900,
+     "AverageWeight": 72.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 580
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 21,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "13/09/2022",
+     "Note": "Lets gooo! Let's do it again but let's hope it's easier next time!",
+     "TotalWeight": 2000,
+     "AverageWeight": 80,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 400
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      7
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 22,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "17/09/2022",
+     "Note": "8 for all next time :)",
+     "TotalWeight": 2682.5,
+     "AverageWeight": 72.5,
+     "AverageRep": 7.4,
+     "AverageWeightRepTotal": 536.5
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 23,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "20/09/2022",
+     "Note": "Was worse than the last time I did it",
+     "TotalWeight": 2000,
+     "AverageWeight": 80,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 400
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 24,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "25/09/2022",
+     "Note": "Bad shoulder oh no.....please be better tomorrow lol ",
+     "TotalWeight": 2900,
+     "AverageWeight": 72.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 580
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 25,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "30/09/2022",
+     "Note": "Was ill! still did it LETS GOOO",
+     "TotalWeight": 3200,
+     "AverageWeight": 80,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 640
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 26,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "05/10/2022",
+     "Note": "",
+     "TotalWeight": 2900,
+     "AverageWeight": 72.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 580
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      3
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      82.5
+     ],
+     "Variances": null,
+     "ID": 27,
+     "Sets": 6,
+     "Weight": 80,
+     "Date": "08/10/2022",
+     "Note": "",
+     "TotalWeight": 2247.5,
+     "AverageWeight": 80.416664,
+     "AverageRep": 4.6666665,
+     "AverageWeightRepTotal": 374.58334
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      7,
+      6
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 28,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "12/10/2022",
+     "Note": "Keep going to get up to 8 reps, also want to do 70 12 by 5",
+     "TotalWeight": 2775,
+     "AverageWeight": 75,
+     "AverageRep": 7.4,
+     "AverageWeightRepTotal": 555
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      4,
+      4
+     ],
+     "Weights": [
+      82.5,
+      82.5,
+      82.5,
+      82.5,
+      82.5
+     ],
+     "Variances": null,
+     "ID": 29,
+     "Sets": 5,
+     "Weight": 82.5,
+     "Date": "16/10/2022",
+     "Note": "",
+     "TotalWeight": 1897.5,
+     "AverageWeight": 82.5,
+     "AverageRep": 4.6,
+     "AverageWeightRepTotal": 379.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      6
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 30,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "22/10/2022",
+     "Note": "",
+     "TotalWeight": 2850,
+     "AverageWeight": 75,
+     "AverageRep": 7.6,
+     "AverageWeightRepTotal": 570
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      3
+     ],
+     "Weights": [
+      82.5,
+      82.5,
+      82.5,
+      82.5,
+      82.5,
+      85
+     ],
+     "Variances": null,
+     "ID": 31,
+     "Sets": 6,
+     "Weight": 82.5,
+     "Date": "26/10/2022",
+     "Note": "",
+     "TotalWeight": 2317.5,
+     "AverageWeight": 82.916664,
+     "AverageRep": 4.6666665,
+     "AverageWeightRepTotal": 386.25
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 32,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "31/10/2022",
+     "Note": "Very big gap between reps. So, lets keep doing this and speed it up!",
+     "TotalWeight": 3000,
+     "AverageWeight": 75,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 600
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      82.5,
+      85,
+      82.5,
+      82.5,
+      82.5
+     ],
+     "Variances": null,
+     "ID": 33,
+     "Sets": 5,
+     "Weight": 82.5,
+     "Date": "04/11/2022",
+     "Note": "Struggled on the last set...think it's best to start on 85 next time for one set then focus on doing the rest properly",
+     "TotalWeight": 2075,
+     "AverageWeight": 83,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 415
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      6,
+      9,
+      5
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 34,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "10/11/2022",
+     "Note": "Not good enough, need to stretch and look after myself",
+     "TotalWeight": 2665,
+     "AverageWeight": 74,
+     "AverageRep": 7.2,
+     "AverageWeightRepTotal": 533
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      4
+     ],
+     "Weights": [
+      85,
+      82.5,
+      82.5,
+      82.5,
+      82.5
+     ],
+     "Variances": null,
+     "ID": 35,
+     "Sets": 5,
+     "Weight": 82.5,
+     "Date": "14/11/2022",
+     "Note": "",
+     "TotalWeight": 1992.5,
+     "AverageWeight": 83,
+     "AverageRep": 4.8,
+     "AverageWeightRepTotal": 398.5
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      4,
+      4
+     ],
+     "Weights": [
+      82.5,
+      82.5,
+      82.5,
+      82.5,
+      80
+     ],
+     "Variances": null,
+     "ID": 36,
+     "Sets": 5,
+     "Weight": 82.5,
+     "Date": "18/11/2022",
+     "Note": "Be better. m",
+     "TotalWeight": 1887.5,
+     "AverageWeight": 82,
+     "AverageRep": 4.6,
+     "AverageWeightRepTotal": 377.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      7
+     ],
+     "Weights": [
+      77.5,
+      77.5,
+      77.5,
+      77.5,
+      77.5
+     ],
+     "Variances": null,
+     "ID": 37,
+     "Sets": 5,
+     "Weight": 77.5,
+     "Date": "24/11/2022",
+     "Note": "",
+     "TotalWeight": 3022.5,
+     "AverageWeight": 77.5,
+     "AverageRep": 7.8,
+     "AverageWeightRepTotal": 604.5
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      82.5,
+      82.5,
+      82.5,
+      82.5,
+      82.5
+     ],
+     "Variances": null,
+     "ID": 38,
+     "Sets": 5,
+     "Weight": 82.5,
+     "Date": "28/11/2022",
+     "Note": "",
+     "TotalWeight": 2062.5,
+     "AverageWeight": 82.5,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 412.5
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      4
+     ],
+     "Weights": [
+      82.5,
+      82.5,
+      82.5,
+      82.5,
+      82.5
+     ],
+     "Variances": null,
+     "ID": 39,
+     "Sets": 5,
+     "Weight": 82.5,
+     "Date": "12/12/2022",
+     "Note": "Need to start eating and drinking and sleeping properly again. Need to get into a good routine again, and earn breaks",
+     "TotalWeight": 1980,
+     "AverageWeight": 82.5,
+     "AverageRep": 4.8,
+     "AverageWeightRepTotal": 396
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 40,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "18/12/2022",
+     "Note": "Lower weight today as I did it after shoulder press...you could call this deloading lol ",
+     "TotalWeight": 3000,
+     "AverageWeight": 60,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 600
+    }
+   ]
+  },
+  "Bent Over Barbell Row": {
+   "ID": 3,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      12,
+      8,
+      10,
+      11
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "03/5/2022",
+     "Note": "",
+     "TotalWeight": 2940,
+     "AverageWeight": 60,
+     "AverageRep": 9.8,
+     "AverageWeightRepTotal": 588
+    },
+    {
+     "Reps": [
+      8,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      62.6,
+      62.5,
+      62.5,
+      62.5,
+      62.5
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 62.5,
+     "Date": "21/6/2022",
+     "Note": "Go for 62.5 next time",
+     "TotalWeight": 3000.8,
+     "AverageWeight": 62.52,
+     "AverageRep": 9.6,
+     "AverageWeightRepTotal": 600.16
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      71,
+      71,
+      71,
+      71,
+      71
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 71,
+     "Date": "25/6/2022",
+     "Note": "",
+     "TotalWeight": 2840,
+     "AverageWeight": 71,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 568
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "06/7/2022",
+     "Note": "Hurt my rib a bit...that muscle I did awhile ago, hopefully its not hurting tommorrow",
+     "TotalWeight": 2900,
+     "AverageWeight": 72.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 580
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      65,
+      65,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "10/7/2022",
+     "Note": "Focus more on form next tiume",
+     "TotalWeight": 3720,
+     "AverageWeight": 62,
+     "AverageRep": 12,
+     "AverageWeightRepTotal": 744
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "17/08/2022",
+     "Note": "",
+     "TotalWeight": 3500,
+     "AverageWeight": 70,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 700
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "22/08/2022",
+     "Note": "Good contractions...lets go!",
+     "TotalWeight": 3600,
+     "AverageWeight": 60,
+     "AverageRep": 12,
+     "AverageWeightRepTotal": 720
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      70,
+      70,
+      65,
+      67.5,
+      65
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 67.5,
+     "Date": "04/09/2022",
+     "Note": "Lower back was hurting",
+     "TotalWeight": 3375,
+     "AverageWeight": 67.5,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 675
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 62.5,
+     "Date": "11/09/2022",
+     "Note": "Lower back hurt, do this again and focus more on form I reckon. ",
+     "TotalWeight": 3750,
+     "AverageWeight": 62.5,
+     "AverageRep": 12,
+     "AverageWeightRepTotal": 750
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "16/09/2022",
+     "Note": "Do lower next time and focus on the squeeze so I can do this properly. ",
+     "TotalWeight": 3500,
+     "AverageWeight": 70,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 700
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 62.5,
+     "Date": "27/09/2022",
+     "Note": "Felt decent, forearms struggled though. ",
+     "TotalWeight": 3750,
+     "AverageWeight": 62.5,
+     "AverageRep": 12,
+     "AverageWeightRepTotal": 750
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "07/10/2022",
+     "Note": "",
+     "TotalWeight": 2800,
+     "AverageWeight": 70,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 560
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "15/10/2022",
+     "Note": "",
+     "TotalWeight": 3625,
+     "AverageWeight": 72.5,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 725
+    },
+    {
+     "Reps": [
+      8,
+      9,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      72.5,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 14,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "23/10/2022",
+     "Note": "",
+     "TotalWeight": 2972.5,
+     "AverageWeight": 72.5,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 594.5
+    },
+    {
+     "Reps": [
+      8,
+      9,
+      8,
+      10,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 15,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "06/11/2022",
+     "Note": "",
+     "TotalWeight": 3225,
+     "AverageWeight": 75,
+     "AverageRep": 8.6,
+     "AverageWeightRepTotal": 645
+    },
+    {
+     "Reps": [
+      9,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 16,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "12/11/2022",
+     "Note": "",
+     "TotalWeight": 3075,
+     "AverageWeight": 75,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 615
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 17,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "16/11/2022",
+     "Note": "",
+     "TotalWeight": 2800,
+     "AverageWeight": 70,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 560
+    },
+    {
+     "Reps": [
+      12,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 18,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "23/11/2022",
+     "Note": "Did this with wraps",
+     "TotalWeight": 3900,
+     "AverageWeight": 75,
+     "AverageRep": 10.4,
+     "AverageWeightRepTotal": 780
+    },
+    {
+     "Reps": [
+      10,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 19,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "01/12/2022",
+     "Note": "",
+     "TotalWeight": 3150,
+     "AverageWeight": 75,
+     "AverageRep": 8.4,
+     "AverageWeightRepTotal": 630
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 20,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "06/12/2022",
+     "Note": "",
+     "TotalWeight": 3000,
+     "AverageWeight": 75,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 600
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 21,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "20/12/2022",
+     "Note": "Probs better to do this with wraps to better focus on the pull in all honesty@",
+     "TotalWeight": 3000,
+     "AverageWeight": 75,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 600
+    }
+   ]
+  },
+  "Bleep Test": {
+   "ID": 4,
+   "Iterations": [
+    {
+     "Reps": [
+      1
+     ],
+     "Weights": [
+      1
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 1,
+     "Weight": 9,
+     "Date": "20/5/2022",
+     "Note": "First time with dec, can be better next time",
+     "TotalWeight": 1,
+     "AverageWeight": 1,
+     "AverageRep": 1,
+     "AverageWeightRepTotal": 1
+    }
+   ]
+  },
+  "Bulgarian Split Squat": {
+   "ID": 5,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      15,
+      15,
+      15,
+      15,
+      15
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 15,
+     "Date": "15/6/2022",
+     "Note": "",
+     "TotalWeight": 600,
+     "AverageWeight": 15,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 120
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      17.5,
+      17.5,
+      17.5,
+      17.5
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 4,
+     "Weight": 17.5,
+     "Date": "20/6/2022",
+     "Note": "",
+     "TotalWeight": 560,
+     "AverageWeight": 17.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 140
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      7,
+      8
+     ],
+     "Weights": [
+      17.5,
+      15,
+      15,
+      15
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 4,
+     "Weight": 15,
+     "Date": "22/6/2022",
+     "Note": "",
+     "TotalWeight": 485,
+     "AverageWeight": 15.625,
+     "AverageRep": 7.75,
+     "AverageWeightRepTotal": 121.25
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      30,
+      30,
+      30
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 3,
+     "Weight": 30,
+     "Date": "11/08/2022",
+     "Note": "",
+     "TotalWeight": 720,
+     "AverageWeight": 30,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 240
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      32,
+      32,
+      32,
+      32,
+      32
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 32,
+     "Date": "02/11/2022",
+     "Note": "",
+     "TotalWeight": 1280,
+     "AverageWeight": 32,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 256
+    }
+   ]
+  },
+  "Cable Machine Row": {
+   "ID": 6,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "07/09/2022",
+     "Note": "",
+     "TotalWeight": 2880,
+     "AverageWeight": 60,
+     "AverageRep": 9.6,
+     "AverageWeightRepTotal": 576
+    }
+   ]
+  },
+  "Center Lat Pulldown": {
+   "ID": 7,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "20/12/2022",
+     "Note": "",
+     "TotalWeight": 2400,
+     "AverageWeight": 60,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 480
+    }
+   ]
+  },
+  "Deadlift": {
+   "ID": 8,
+   "Iterations": [
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      120,
+      120,
+      120,
+      120,
+      120
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 120,
+     "Date": "29/4/2022",
+     "Note": "",
+     "TotalWeight": 3000,
+     "AverageWeight": 120,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 600
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 125,
+     "Date": "06/5/2022",
+     "Note": "Reps were very slow especially towards end",
+     "TotalWeight": 3125,
+     "AverageWeight": 125,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 625
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 125,
+     "Date": "12/5/2022",
+     "Note": "Better, don't roll next time, weight is nicer today though",
+     "TotalWeight": 3125,
+     "AverageWeight": 125,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 625
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 125,
+     "Date": "19/5/2022",
+     "Note": "Can't believe I managed that today felt awful",
+     "TotalWeight": 3125,
+     "AverageWeight": 125,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 625
+    },
+    {
+     "Reps": [
+      5,
+      8,
+      8,
+      5,
+      5
+     ],
+     "Weights": [
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 110,
+     "Date": "25/5/2022",
+     "Note": "Next time I do this weight all all weights for 8 reps",
+     "TotalWeight": 3410,
+     "AverageWeight": 110,
+     "AverageRep": 6.2,
+     "AverageWeightRepTotal": 682
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 125,
+     "Date": "01/6/2022",
+     "Note": "Quicker next time",
+     "TotalWeight": 3125,
+     "AverageWeight": 125,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 625
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 125,
+     "Date": "05/6/2022",
+     "Note": "Go up once my knee is better",
+     "TotalWeight": 3125,
+     "AverageWeight": 125,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 625
+    }
+   ]
+  },
+  "Flat Dumbell Bench": {
+   "ID": 9,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "05/12/2022",
+     "Note": "",
+     "TotalWeight": 2400,
+     "AverageWeight": 60,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 480
+    }
+   ]
+  },
+  "Hamstring Curl": {
+   "ID": 10,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "11/08/2022",
+     "Note": "Need to keep doing this...clear sign of fatigue towards end",
+     "TotalWeight": 2400,
+     "AverageWeight": 60,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 480
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "21/08/2022",
+     "Note": "",
+     "TotalWeight": 2400,
+     "AverageWeight": 60,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 480
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "09/09/2022",
+     "Note": " First week of work, was pretty dead, need to push legs harder next time though. ",
+     "TotalWeight": 2440,
+     "AverageWeight": 61,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 488
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "14/09/2022",
+     "Note": "",
+     "TotalWeight": 2480,
+     "AverageWeight": 62,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 496
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      9,
+      12,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      65,
+      50,
+      50,
+      65
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 6,
+     "Weight": 65,
+     "Date": "22/09/2022",
+     "Note": "",
+     "TotalWeight": 3130,
+     "AverageWeight": 60,
+     "AverageRep": 8.833333,
+     "AverageWeightRepTotal": 521.6667
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "01/10/2022",
+     "Note": "",
+     "TotalWeight": 2600,
+     "AverageWeight": 65,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 520
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "09/10/2022",
+     "Note": "",
+     "TotalWeight": 2600,
+     "AverageWeight": 65,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 520
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      50,
+      55,
+      50
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 3,
+     "Weight": 55,
+     "Date": "14/10/2022",
+     "Note": "",
+     "TotalWeight": 1860,
+     "AverageWeight": 51.666668,
+     "AverageRep": 12,
+     "AverageWeightRepTotal": 620
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      9,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "23/10/2022",
+     "Note": "",
+     "TotalWeight": 2665,
+     "AverageWeight": 65,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 533
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "29/10/2022",
+     "Note": "",
+     "TotalWeight": 2760,
+     "AverageWeight": 69,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 552
+    },
+    {
+     "Reps": [
+      8,
+      12,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      70,
+      70,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 60,
+     "Date": "07/11/2022",
+     "Note": "",
+     "TotalWeight": 3200,
+     "AverageWeight": 64,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 640
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      11.5,
+      12
+     ],
+     "Weights": [
+      60,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 4,
+     "Weight": 60,
+     "Date": "18/11/2022",
+     "Note": "",
+     "TotalWeight": 2850,
+     "AverageWeight": 60,
+     "AverageRep": 11.875,
+     "AverageWeightRepTotal": 712.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "30/11/2022",
+     "Note": "",
+     "TotalWeight": 2600,
+     "AverageWeight": 65,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 520
+    }
+   ]
+  },
+  "Hip Thrust Machine": {
+   "ID": 11,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "15/6/2022",
+     "Note": "Cool stuff",
+     "TotalWeight": 3200,
+     "AverageWeight": 80,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 640
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 100,
+     "Date": "02/7/2022",
+     "Note": "Do it slower next time at 90kg and really squeeze bum",
+     "TotalWeight": 4000,
+     "AverageWeight": 100,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 800
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      65,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "12/12/2022",
+     "Note": "",
+     "TotalWeight": 2600,
+     "AverageWeight": 65,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 520
+    }
+   ]
+  },
+  "Incline Bench Smith Machine": {
+   "ID": 12,
+   "Iterations": [
+    {
+     "Reps": [
+      12,
+      8,
+      8,
+      10
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 4,
+     "Weight": 40,
+     "Date": "24/6/2022",
+     "Note": "",
+     "TotalWeight": 1520,
+     "AverageWeight": 40,
+     "AverageRep": 9.5,
+     "AverageWeightRepTotal": 380
+    }
+   ]
+  },
+  "Incline dumbell bench": {
+   "ID": 13,
+   "Iterations": [
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "02/5/2022",
+     "Note": "",
+     "TotalWeight": 1920,
+     "AverageWeight": 40,
+     "AverageRep": 9.6,
+     "AverageWeightRepTotal": 384
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "20/6/2022",
+     "Note": "",
+     "TotalWeight": 2000,
+     "AverageWeight": 50,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 400
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      45,
+      45,
+      45,
+      45,
+      45
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 45,
+     "Date": "01/7/2022",
+     "Note": "",
+     "TotalWeight": 2430,
+     "AverageWeight": 45,
+     "AverageRep": 10.8,
+     "AverageWeightRepTotal": 486
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "09/7/2022",
+     "Note": "Go up to 27.5kg dumbells next time.",
+     "TotalWeight": 2000,
+     "AverageWeight": 50,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 400
+    },
+    {
+     "Reps": [
+      8,
+      7,
+      8,
+      8,
+      9
+     ],
+     "Weights": [
+      55,
+      55,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "21/08/2022",
+     "Note": "",
+     "TotalWeight": 2075,
+     "AverageWeight": 52,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 415
+    },
+    {
+     "Reps": [
+      8,
+      9,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      55,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "02/09/2022",
+     "Note": "Had a bad hand",
+     "TotalWeight": 2090,
+     "AverageWeight": 51,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 418
+    },
+    {
+     "Reps": [
+      8,
+      6,
+      9,
+      8,
+      7
+     ],
+     "Weights": [
+      55,
+      55,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 55,
+     "Date": "10/09/2022",
+     "Note": "Might've been from first week of work for pure output, or the intial 8 by 72.5 bench. ",
+     "TotalWeight": 1970,
+     "AverageWeight": 52,
+     "AverageRep": 7.6,
+     "AverageWeightRepTotal": 394
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "17/09/2022",
+     "Note": "",
+     "TotalWeight": 2000,
+     "AverageWeight": 50,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 400
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "05/10/2022",
+     "Note": "",
+     "TotalWeight": 2000,
+     "AverageWeight": 50,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 400
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      9,
+      10,
+      10
+     ],
+     "Weights": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "16/10/2022",
+     "Note": "",
+     "TotalWeight": 2450,
+     "AverageWeight": 50,
+     "AverageRep": 9.8,
+     "AverageWeightRepTotal": 490
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      6
+     ],
+     "Weights": [
+      55,
+      55,
+      55,
+      55,
+      55
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 55,
+     "Date": "26/10/2022",
+     "Note": "",
+     "TotalWeight": 1980,
+     "AverageWeight": 55,
+     "AverageRep": 7.2,
+     "AverageWeightRepTotal": 396
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      5,
+      8,
+      8
+     ],
+     "Weights": [
+      55,
+      55,
+      55,
+      55,
+      55
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 5,
+     "Weight": 55,
+     "Date": "10/11/2022",
+     "Note": "Not good enough like flat bench",
+     "TotalWeight": 2035,
+     "AverageWeight": 55,
+     "AverageRep": 7.4,
+     "AverageWeightRepTotal": 407
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      6
+     ],
+     "Weights": [
+      55,
+      55,
+      55,
+      55,
+      55
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 55,
+     "Date": "28/11/2022",
+     "Note": "",
+     "TotalWeight": 2090,
+     "AverageWeight": 55,
+     "AverageRep": 7.6,
+     "AverageWeightRepTotal": 418
+    },
+    {
+     "Reps": [
+      11,
+      10,
+      8,
+      9,
+      8
+     ],
+     "Weights": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 14,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "12/12/2022",
+     "Note": "",
+     "TotalWeight": 2300,
+     "AverageWeight": 50,
+     "AverageRep": 9.2,
+     "AverageWeightRepTotal": 460
+    }
+   ]
+  },
+  "Lat Pulldown": {
+   "ID": 14,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      70,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "06/7/2022",
+     "Note": "First time I've recorded this...Cool! :) ",
+     "TotalWeight": 2600,
+     "AverageWeight": 65,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 520
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      70,
+      70,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 65,
+     "Date": "16/08/2022",
+     "Note": "",
+     "TotalWeight": 2680,
+     "AverageWeight": 67,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 536
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      70,
+      70,
+      70,
+      65
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "17/08/2022",
+     "Note": "",
+     "TotalWeight": 2720,
+     "AverageWeight": 68,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 544
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "26/08/2022",
+     "Note": "Was the first excerise proably why the weight was alot easier",
+     "TotalWeight": 2840,
+     "AverageWeight": 71,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 568
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      12,
+      9,
+      10
+     ],
+     "Weights": [
+      70,
+      70,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "04/09/2022",
+     "Note": "",
+     "TotalWeight": 3135,
+     "AverageWeight": 67,
+     "AverageRep": 9.4,
+     "AverageWeightRepTotal": 627
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      7,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      65,
+      70
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "11/09/2022",
+     "Note": "Please go lower next time...maybe try holding it at the end",
+     "TotalWeight": 2695,
+     "AverageWeight": 69,
+     "AverageRep": 7.8,
+     "AverageWeightRepTotal": 539
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      10,
+      9
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "16/09/2022",
+     "Note": "",
+     "TotalWeight": 3130,
+     "AverageWeight": 73,
+     "AverageRep": 8.6,
+     "AverageWeightRepTotal": 626
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      10,
+      9
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "21/09/2022",
+     "Note": "",
+     "TotalWeight": 3130,
+     "AverageWeight": 73,
+     "AverageRep": 8.6,
+     "AverageWeightRepTotal": 626
+    },
+    {
+     "Reps": [
+      8,
+      10,
+      8,
+      8,
+      10
+     ],
+     "Weights": [
+      75,
+      65,
+      65,
+      70,
+      65
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "27/09/2022",
+     "Note": "Got to start pulling all the way down :) ",
+     "TotalWeight": 2980,
+     "AverageWeight": 68,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 596
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "02/10/2022",
+     "Note": "",
+     "TotalWeight": 2800,
+     "AverageWeight": 70,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 560
+    },
+    {
+     "Reps": [
+      10,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      75,
+      75,
+      75,
+      70
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "07/10/2022",
+     "Note": "",
+     "TotalWeight": 3060,
+     "AverageWeight": 73,
+     "AverageRep": 8.4,
+     "AverageWeightRepTotal": 612
+    },
+    {
+     "Reps": [
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 3,
+     "Weight": 60,
+     "Date": "11/10/2022",
+     "Note": "",
+     "TotalWeight": 2160,
+     "AverageWeight": 60,
+     "AverageRep": 12,
+     "AverageWeightRepTotal": 720
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "16/10/2022",
+     "Note": "Went pretty low for most of sets, form was proably the best its ever been at this weight",
+     "TotalWeight": 2800,
+     "AverageWeight": 70,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 560
+    },
+    {
+     "Reps": [
+      8,
+      10,
+      10,
+      8
+     ],
+     "Weights": [
+      70,
+      60,
+      60,
+      60
+     ],
+     "Variances": null,
+     "ID": 14,
+     "Sets": 4,
+     "Weight": 70,
+     "Date": "24/10/2022",
+     "Note": "",
+     "TotalWeight": 2240,
+     "AverageWeight": 62.5,
+     "AverageRep": 9,
+     "AverageWeightRepTotal": 560
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      75,
+      75,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 15,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "06/11/2022",
+     "Note": "",
+     "TotalWeight": 2880,
+     "AverageWeight": 72,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 576
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 16,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "12/11/2022",
+     "Note": "",
+     "TotalWeight": 3080,
+     "AverageWeight": 70,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 616
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      8
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 17,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "18/11/2022",
+     "Note": "",
+     "TotalWeight": 3360,
+     "AverageWeight": 70,
+     "AverageRep": 9.6,
+     "AverageWeightRepTotal": 672
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      9,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 18,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "23/11/2022",
+     "Note": "",
+     "TotalWeight": 3075,
+     "AverageWeight": 75,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 615
+    },
+    {
+     "Reps": [
+      10,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 19,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "01/12/2022",
+     "Note": "",
+     "TotalWeight": 3150,
+     "AverageWeight": 75,
+     "AverageRep": 8.4,
+     "AverageWeightRepTotal": 630
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 20,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "13/12/2022",
+     "Note": "",
+     "TotalWeight": 3000,
+     "AverageWeight": 75,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 600
+    }
+   ]
+  },
+  "Leg Press": {
+   "ID": 15,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      9,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      200,
+      200,
+      200,
+      200,
+      200
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 200,
+     "Date": "08/5/2022",
+     "Note": "Do it even slower and controlled no bounce next time",
+     "TotalWeight": 8200,
+     "AverageWeight": 200,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 1640
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 160,
+     "Date": "03/09/2022",
+     "Note": "Hurt my knee, but its the first time I've done it in while. Hopefully it doesn't make my knee pain any worse!",
+     "TotalWeight": 6400,
+     "AverageWeight": 160,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 1280
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      200,
+      200,
+      200,
+      200,
+      200
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 200,
+     "Date": "09/09/2022",
+     "Note": "Push this harder next time...after deadlifts or squats hopefully",
+     "TotalWeight": 8800,
+     "AverageWeight": 200,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 1760
+    },
+    {
+     "Reps": [
+      9,
+      9,
+      9,
+      8,
+      8
+     ],
+     "Weights": [
+      200,
+      200,
+      200,
+      200,
+      200
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 200,
+     "Date": "14/09/2022",
+     "Note": "",
+     "TotalWeight": 8600,
+     "AverageWeight": 200,
+     "AverageRep": 8.6,
+     "AverageWeightRepTotal": 1720
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      200,
+      200,
+      200,
+      200,
+      200
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 200,
+     "Date": "18/09/2022",
+     "Note": "",
+     "TotalWeight": 10000,
+     "AverageWeight": 200,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 2000
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      200,
+      200,
+      200,
+      200,
+      200
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 200,
+     "Date": "22/09/2022",
+     "Note": "Noice",
+     "TotalWeight": 10000,
+     "AverageWeight": 200,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 2000
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      8,
+      8
+     ],
+     "Weights": [
+      200,
+      200,
+      200,
+      200,
+      200
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 200,
+     "Date": "04/10/2022",
+     "Note": "",
+     "TotalWeight": 9200,
+     "AverageWeight": 200,
+     "AverageRep": 9.2,
+     "AverageWeightRepTotal": 1840
+    },
+    {
+     "Reps": [
+      10,
+      15
+     ],
+     "Weights": [
+      200,
+      200
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 2,
+     "Weight": 200,
+     "Date": "09/10/2022",
+     "Note": "",
+     "TotalWeight": 5000,
+     "AverageWeight": 200,
+     "AverageRep": 12.5,
+     "AverageWeightRepTotal": 2500
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      220,
+      220,
+      220,
+      220,
+      220
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 220,
+     "Date": "12/12/2022",
+     "Note": "",
+     "TotalWeight": 8800,
+     "AverageWeight": 220,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 1760
+    }
+   ]
+  },
+  "Machine Lying Down Bench": {
+   "ID": 16,
+   "Iterations": [
+    {
+     "Reps": [
+      10,
+      9,
+      8,
+      8
+     ],
+     "Weights": [
+      60,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 4,
+     "Weight": 70,
+     "Date": "07/5/2022",
+     "Note": "",
+     "TotalWeight": 2350,
+     "AverageWeight": 67.5,
+     "AverageRep": 8.75,
+     "AverageWeightRepTotal": 587.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      3,
+      8,
+      10,
+      9
+     ],
+     "Weights": [
+      85,
+      85,
+      85,
+      65,
+      65,
+      65
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 6,
+     "Weight": 85,
+     "Date": "18/5/2022",
+     "Note": "Died after 3rd set",
+     "TotalWeight": 3370,
+     "AverageWeight": 75,
+     "AverageRep": 7.6666665,
+     "AverageWeightRepTotal": 561.6667
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      220,
+      220,
+      220,
+      220,
+      220
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 220,
+     "Date": "12/12/2022",
+     "Note": "",
+     "TotalWeight": 8800,
+     "AverageWeight": 220,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 1760
+    }
+   ]
+  },
+  "Machine Row": {
+   "ID": 17,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 100,
+     "Date": "11/10/2022",
+     "Note": "",
+     "TotalWeight": 4000,
+     "AverageWeight": 100,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 800
+    },
+    {
+     "Reps": [
+      8,
+      9,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 100,
+     "Date": "27/10/2022",
+     "Note": "",
+     "TotalWeight": 4100,
+     "AverageWeight": 100,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 820
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      80,
+      85,
+      87.5,
+      87.5,
+      87.5
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 85,
+     "Date": "31/10/2022",
+     "Note": "",
+     "TotalWeight": 3420,
+     "AverageWeight": 85.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 684
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      100,
+      100,
+      100,
+      105,
+      105
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 100,
+     "Date": "12/11/2022",
+     "Note": "",
+     "TotalWeight": 4080,
+     "AverageWeight": 102,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 816
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 110,
+     "Date": "01/12/2022",
+     "Note": "",
+     "TotalWeight": 4400,
+     "AverageWeight": 110,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 880
+    }
+   ]
+  },
+  "Machine Shoulder Press": {
+   "ID": 18,
+   "Iterations": [
+    {
+     "Reps": [
+      10,
+      10,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      40,
+      45,
+      45,
+      45,
+      40
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 45,
+     "Date": "02/5/2022",
+     "Note": "",
+     "TotalWeight": 1890,
+     "AverageWeight": 43,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 378
+    },
+    {
+     "Reps": [
+      12,
+      10,
+      8,
+      8,
+      10
+     ],
+     "Weights": [
+      45,
+      45,
+      45,
+      45,
+      45
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 45,
+     "Date": "05/5/2022",
+     "Note": "",
+     "TotalWeight": 2160,
+     "AverageWeight": 45,
+     "AverageRep": 9.6,
+     "AverageWeightRepTotal": 432
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 3,
+     "Weight": 40,
+     "Date": "18/5/2022",
+     "Note": "Was so dead already",
+     "TotalWeight": 960,
+     "AverageWeight": 40,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 320
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      9,
+      8
+     ],
+     "Weights": [
+      40,
+      45,
+      45,
+      45,
+      45
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 45,
+     "Date": "25/5/2022",
+     "Note": "All 45 next time",
+     "TotalWeight": 1805,
+     "AverageWeight": 44,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 361
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 110,
+     "Date": "06/12/2022",
+     "Note": "",
+     "TotalWeight": 4400,
+     "AverageWeight": 110,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 880
+    }
+   ]
+  },
+  "One Arm Dumbell Row": {
+   "ID": 19,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      10,
+      10,
+      8,
+      8
+     ],
+     "Weights": [
+      27.5,
+      27.5,
+      27.5,
+      27.5,
+      27.5
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 27.5,
+     "Date": "10/7/2022",
+     "Note": "Cool to do it, felt good! Focus on the squeeze",
+     "TotalWeight": 1210,
+     "AverageWeight": 27.5,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 242
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      27.5,
+      27.5,
+      27.5,
+      27.5,
+      27.5
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 27.5,
+     "Date": "16/08/2022",
+     "Note": "",
+     "TotalWeight": 1375,
+     "AverageWeight": 27.5,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 275
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 30,
+     "Date": "17/08/2022",
+     "Note": "",
+     "TotalWeight": 1200,
+     "AverageWeight": 30,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 240
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      32.5,
+      32.5,
+      32.5,
+      32.5,
+      32.5
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 32.5,
+     "Date": "26/08/2022",
+     "Note": "Nice!",
+     "TotalWeight": 1300,
+     "AverageWeight": 32.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 260
+    },
+    {
+     "Reps": [
+      10,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 30,
+     "Date": "04/09/2022",
+     "Note": "",
+     "TotalWeight": 1260,
+     "AverageWeight": 30,
+     "AverageRep": 8.4,
+     "AverageWeightRepTotal": 252
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      32.5,
+      32.5,
+      30,
+      30,
+      30
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 30,
+     "Date": "07/09/2022",
+     "Note": "",
+     "TotalWeight": 1240,
+     "AverageWeight": 31,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 248
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 30,
+     "Date": "11/09/2022",
+     "Note": "",
+     "TotalWeight": 1500,
+     "AverageWeight": 30,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 300
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 30,
+     "Date": "21/09/2022",
+     "Note": "",
+     "TotalWeight": 1500,
+     "AverageWeight": 30,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 300
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      32.5,
+      32.5,
+      32.5,
+      32.5,
+      32.5
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 32.5,
+     "Date": "27/09/2022",
+     "Note": "",
+     "TotalWeight": 1300,
+     "AverageWeight": 32.5,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 260
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      32.5,
+      32.5,
+      32.5,
+      32.5,
+      32.5
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 32.5,
+     "Date": "07/10/2022",
+     "Note": "Best bit of the workout...well done!",
+     "TotalWeight": 1625,
+     "AverageWeight": 32.5,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 325
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      32.5,
+      32.5,
+      32.5,
+      32.5,
+      32.5
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 32.5,
+     "Date": "23/10/2022",
+     "Note": "",
+     "TotalWeight": 1625,
+     "AverageWeight": 32.5,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 325
+    }
+   ]
+  },
+  "One-Arm overhead tricep extension": {
+   "ID": 20,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      10,
+      10
+     ],
+     "Weights": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 8,
+     "Date": "02/5/2022",
+     "Note": "",
+     "TotalWeight": 352,
+     "AverageWeight": 8,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 70.4
+    },
+    {
+     "Reps": [
+      6,
+      5,
+      12,
+      5,
+      12
+     ],
+     "Weights": [
+      10,
+      10,
+      8,
+      10,
+      8
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 10,
+     "Date": "20/5/2022",
+     "Note": "",
+     "TotalWeight": 352,
+     "AverageWeight": 9.2,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 70.4
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 10,
+     "Date": "18/08/2022",
+     "Note": "This was a soley arm workout, hence the better results most likely. Keep going!",
+     "TotalWeight": 400,
+     "AverageWeight": 10,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 80
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      9.5
+     ],
+     "Weights": [
+      9,
+      9,
+      9,
+      9,
+      9
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 9,
+     "Date": "06/09/2022",
+     "Note": "Could feel a pump, didn't have time for another exercise though :(",
+     "TotalWeight": 445.5,
+     "AverageWeight": 9,
+     "AverageRep": 9.9,
+     "AverageWeightRepTotal": 89.1
+    },
+    {
+     "Reps": [
+      9,
+      10,
+      12,
+      11,
+      8,
+      9
+     ],
+     "Weights": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 6,
+     "Weight": 9,
+     "Date": "17/09/2022",
+     "Note": "",
+     "TotalWeight": 531,
+     "AverageWeight": 9,
+     "AverageRep": 9.833333,
+     "AverageWeightRepTotal": 88.5
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 10,
+     "Date": "18/12/2022",
+     "Note": "",
+     "TotalWeight": 440,
+     "AverageWeight": 10,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 88
+    }
+   ]
+  },
+  "Pull Ups": {
+   "ID": 21,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      6
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "25/5/2022",
+     "Note": "",
+     "TotalWeight": 36,
+     "AverageWeight": 1,
+     "AverageRep": 7.2,
+     "AverageWeightRepTotal": 7.2
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "12/6/2022",
+     "Note": "",
+     "TotalWeight": 40,
+     "AverageWeight": 1,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 8
+    },
+    {
+     "Reps": [
+      10,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "04/7/2022",
+     "Note": "",
+     "TotalWeight": 42,
+     "AverageWeight": 1,
+     "AverageRep": 8.4,
+     "AverageWeightRepTotal": 8.4
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      9,
+      9.5
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "07/09/2022",
+     "Note": "Was the first thing I did",
+     "TotalWeight": 48.5,
+     "AverageWeight": 1,
+     "AverageRep": 9.7,
+     "AverageWeightRepTotal": 9.7
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      8.5,
+      8,
+      9
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "21/09/2022",
+     "Note": "",
+     "TotalWeight": 45.5,
+     "AverageWeight": 1,
+     "AverageRep": 9.1,
+     "AverageWeightRepTotal": 9.1
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "02/10/2022",
+     "Note": "",
+     "TotalWeight": 46,
+     "AverageWeight": 1,
+     "AverageRep": 9.2,
+     "AverageWeightRepTotal": 9.2
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "11/10/2022",
+     "Note": "",
+     "TotalWeight": 46,
+     "AverageWeight": 1,
+     "AverageRep": 9.2,
+     "AverageWeightRepTotal": 9.2
+    },
+    {
+     "Reps": [
+      12,
+      10,
+      10,
+      10,
+      9
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "19/10/2022",
+     "Note": "",
+     "TotalWeight": 51,
+     "AverageWeight": 1,
+     "AverageRep": 10.2,
+     "AverageWeightRepTotal": 10.2
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      8,
+      7
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "27/10/2022",
+     "Note": "",
+     "TotalWeight": 45,
+     "AverageWeight": 1,
+     "AverageRep": 9,
+     "AverageWeightRepTotal": 9
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      9,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "31/10/2022",
+     "Note": "",
+     "TotalWeight": 41,
+     "AverageWeight": 1,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 8.2
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "16/11/2022",
+     "Note": "Used a different bar to normal",
+     "TotalWeight": 40,
+     "AverageWeight": 1,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 8
+    },
+    {
+     "Reps": [
+      12,
+      9,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "27/11/2022",
+     "Note": "",
+     "TotalWeight": 45,
+     "AverageWeight": 1,
+     "AverageRep": 9,
+     "AverageWeightRepTotal": 9
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 1,
+     "Date": "20/12/2022",
+     "Note": "Do this first next time and lets go for decent numbers",
+     "TotalWeight": 40,
+     "AverageWeight": 1,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 8
+    }
+   ]
+  },
+  "Pullover": {
+   "ID": 22,
+   "Iterations": [
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      15,
+      15,
+      17.5,
+      17.5,
+      17.5
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 17.5,
+     "Date": "04/09/2022",
+     "Note": "First time doing it, some reps felt amazing, so need to work out form. Also, my neck hurt for bad reps so need to sort this out!",
+     "TotalWeight": 825,
+     "AverageWeight": 16.5,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 165
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      20,
+      20,
+      20,
+      20,
+      20
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 20,
+     "Date": "27/09/2022",
+     "Note": "",
+     "TotalWeight": 800,
+     "AverageWeight": 20,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 160
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      8
+     ],
+     "Weights": [
+      1,
+      1,
+      1
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 3,
+     "Weight": 1,
+     "Date": "06/12/2022",
+     "Note": "",
+     "TotalWeight": 28,
+     "AverageWeight": 1,
+     "AverageRep": 9.333333,
+     "AverageWeightRepTotal": 9.333333
+    }
+   ]
+  },
+  "Romanian deadlift": {
+   "ID": 23,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      10,
+      10,
+      8,
+      8
+     ],
+     "Weights": [
+      65,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "22/6/2022",
+     "Note": "",
+     "TotalWeight": 3040,
+     "AverageWeight": 69,
+     "AverageRep": 8.8,
+     "AverageWeightRepTotal": 608
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "16/08/2022",
+     "Note": "",
+     "TotalWeight": 3000,
+     "AverageWeight": 75,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 600
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 75,
+     "Date": "25/08/2022",
+     "Note": "",
+     "TotalWeight": 3000,
+     "AverageWeight": 75,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 600
+    },
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "03/09/2022",
+     "Note": "Felt pretty good, something by my right abs felt funny though. ",
+     "TotalWeight": 3500,
+     "AverageWeight": 70,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 700
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      70,
+      72.5,
+      72.5,
+      72.5,
+      72.5
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 72.5,
+     "Date": "04/10/2022",
+     "Note": "",
+     "TotalWeight": 2880,
+     "AverageWeight": 72,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 576
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "18/10/2022",
+     "Note": "",
+     "TotalWeight": 3200,
+     "AverageWeight": 80,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 640
+    },
+    {
+     "Reps": [
+      10,
+      12,
+      12,
+      12,
+      12
+     ],
+     "Weights": [
+      70,
+      70,
+      70,
+      70,
+      70
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 70,
+     "Date": "02/11/2022",
+     "Note": "",
+     "TotalWeight": 4060,
+     "AverageWeight": 70,
+     "AverageRep": 11.6,
+     "AverageWeightRepTotal": 812
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "24/11/2022",
+     "Note": "",
+     "TotalWeight": 3200,
+     "AverageWeight": 80,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 640
+    },
+    {
+     "Reps": [
+      9,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      85,
+      85,
+      85,
+      85,
+      85
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 85,
+     "Date": "19/12/2022",
+     "Note": "",
+     "TotalWeight": 3485,
+     "AverageWeight": 85,
+     "AverageRep": 8.2,
+     "AverageWeightRepTotal": 697
+    }
+   ]
+  },
+  "Shoulder Press Barbell": {
+   "ID": 24,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      6
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "30/4/2022",
+     "Note": "",
+     "TotalWeight": 1440,
+     "AverageWeight": 40,
+     "AverageRep": 7.2,
+     "AverageWeightRepTotal": 288
+    },
+    {
+     "Reps": [
+      10,
+      8,
+      9,
+      8,
+      8
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "05/5/2022",
+     "Note": "",
+     "TotalWeight": 1720,
+     "AverageWeight": 40,
+     "AverageRep": 8.6,
+     "AverageWeightRepTotal": 344
+    },
+    {
+     "Reps": [
+      8,
+      6,
+      6,
+      6,
+      6
+     ],
+     "Weights": [
+      42.5,
+      42.5,
+      42.5,
+      42.5,
+      42.5
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 42.5,
+     "Date": "13/5/2022",
+     "Note": "Do this again, try to get up to 8 reps every set",
+     "TotalWeight": 1360,
+     "AverageWeight": 42.5,
+     "AverageRep": 6.4,
+     "AverageWeightRepTotal": 272
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      7,
+      7,
+      5
+     ],
+     "Weights": [
+      42.5,
+      42.5,
+      42.5,
+      42.5,
+      42.5
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 42.5,
+     "Date": "18/5/2022",
+     "Note": "Was doing ok but towards the end, try to shorten rest next time",
+     "TotalWeight": 1487.5,
+     "AverageWeight": 42.5,
+     "AverageRep": 7,
+     "AverageWeightRepTotal": 297.5
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      6
+     ],
+     "Weights": [
+      42.5,
+      42.5,
+      42.5,
+      42.5,
+      42.5
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 42.5,
+     "Date": "24/5/2022",
+     "Note": "Next time all 8....so no arguments with Eve while doing it",
+     "TotalWeight": 1530,
+     "AverageWeight": 42.5,
+     "AverageRep": 7.2,
+     "AverageWeightRepTotal": 306
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      6,
+      6
+     ],
+     "Weights": [
+      42.5,
+      42.5,
+      42.5,
+      42.5,
+      42.5
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 42.5,
+     "Date": "02/6/2022",
+     "Note": "",
+     "TotalWeight": 1530,
+     "AverageWeight": 42.5,
+     "AverageRep": 7.2,
+     "AverageWeightRepTotal": 306
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      5
+     ],
+     "Weights": [
+      42.5,
+      42.5,
+      42.5,
+      42.5,
+      42.5
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 42.5,
+     "Date": "06/6/2022",
+     "Note": "Need to start pushing myself more...not so much on the core workout...but the accessory workouts",
+     "TotalWeight": 1572.5,
+     "AverageWeight": 42.5,
+     "AverageRep": 7.4,
+     "AverageWeightRepTotal": 314.5
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 5,
+     "Weight": 50,
+     "Date": "18/12/2022",
+     "Note": "Felt pretty good, will struggle to go higher in weight though so will be better to go for the 45 8 by 5 first",
+     "TotalWeight": 1250,
+     "AverageWeight": 50,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 250
+    }
+   ]
+  },
+  "Squat": {
+   "ID": 25,
+   "Iterations": [
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "01/5/2022",
+     "Note": "",
+     "TotalWeight": 3200,
+     "AverageWeight": 80,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 640
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "Variances": null,
+     "ID": 2,
+     "Sets": 5,
+     "Weight": 90,
+     "Date": "08/5/2022",
+     "Note": "Keep doing this weight for awhile and up reps",
+     "TotalWeight": 2250,
+     "AverageWeight": 90,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 450
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "Variances": null,
+     "ID": 3,
+     "Sets": 5,
+     "Weight": 90,
+     "Date": "03/6/2022",
+     "Note": "Need to change date for this, wasn't saved",
+     "TotalWeight": 2250,
+     "AverageWeight": 90,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 450
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      5,
+      5
+     ],
+     "Weights": [
+      80,
+      80,
+      80,
+      80,
+      80
+     ],
+     "Variances": null,
+     "ID": 4,
+     "Sets": 5,
+     "Weight": 80,
+     "Date": "02/7/2022",
+     "Note": "Fingers crossed legs don't hurt tomorrow as in my knee",
+     "TotalWeight": 2720,
+     "AverageWeight": 80,
+     "AverageRep": 6.8,
+     "AverageWeightRepTotal": 544
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "Variances": null,
+     "ID": 5,
+     "Sets": 5,
+     "Weight": 90,
+     "Date": "11/08/2022",
+     "Note": "Squeeze my abs more next time",
+     "TotalWeight": 2250,
+     "AverageWeight": 90,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 450
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "Variances": null,
+     "ID": 6,
+     "Sets": 5,
+     "Weight": 90,
+     "Date": "14/09/2022",
+     "Note": "Next time do it lower...felt good though! :) Hopefully my knee doesn't hurt tomorrow!",
+     "TotalWeight": 3600,
+     "AverageWeight": 90,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 720
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      95,
+      95,
+      95,
+      95,
+      95
+     ],
+     "Variances": null,
+     "ID": 7,
+     "Sets": 5,
+     "Weight": 95,
+     "Date": "22/09/2022",
+     "Note": "Hip is KILLING ME, please get better soon :)",
+     "TotalWeight": 2375,
+     "AverageWeight": 95,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 475
+    },
+    {
+     "Reps": [
+      7,
+      13,
+      12
+     ],
+     "Weights": [
+      90,
+      90,
+      90
+     ],
+     "Variances": null,
+     "ID": 8,
+     "Sets": 3,
+     "Weight": 90,
+     "Date": "09/10/2022",
+     "Note": "Next time 12 reps 5 sets...on Wednesday. Let's GOOOOO",
+     "TotalWeight": 2880,
+     "AverageWeight": 90,
+     "AverageRep": 10.666667,
+     "AverageWeightRepTotal": 960
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      8
+     ],
+     "Weights": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "Variances": null,
+     "ID": 9,
+     "Sets": 5,
+     "Weight": 100,
+     "Date": "14/10/2022",
+     "Note": "",
+     "TotalWeight": 2800,
+     "AverageWeight": 100,
+     "AverageRep": 5.6,
+     "AverageWeightRepTotal": 560
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      105,
+      105,
+      105,
+      105,
+      105
+     ],
+     "Variances": null,
+     "ID": 10,
+     "Sets": 5,
+     "Weight": 105,
+     "Date": "23/10/2022",
+     "Note": "",
+     "TotalWeight": 2625,
+     "AverageWeight": 105,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 525
+    },
+    {
+     "Reps": [
+      5,
+      6,
+      5,
+      5,
+      8
+     ],
+     "Weights": [
+      105,
+      105,
+      105,
+      105,
+      105
+     ],
+     "Variances": null,
+     "ID": 11,
+     "Sets": 5,
+     "Weight": 105,
+     "Date": "29/10/2022",
+     "Note": "",
+     "TotalWeight": 3045,
+     "AverageWeight": 105,
+     "AverageRep": 5.8,
+     "AverageWeightRepTotal": 609
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8,
+      10
+     ],
+     "Weights": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "Variances": null,
+     "ID": 12,
+     "Sets": 5,
+     "Weight": 100,
+     "Date": "07/11/2022",
+     "Note": "Should go lower one the knee is all good",
+     "TotalWeight": 4200,
+     "AverageWeight": 100,
+     "AverageRep": 8.4,
+     "AverageWeightRepTotal": 840
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "Variances": null,
+     "ID": 13,
+     "Sets": 5,
+     "Weight": 100,
+     "Date": "18/11/2022",
+     "Note": "Went lower this time...well done! Be more careful with the knee though and go lower for all sets next time! ",
+     "TotalWeight": 2500,
+     "AverageWeight": 100,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 500
+    },
+    {
+     "Reps": [
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "Weights": [
+      100,
+      105,
+      105,
+      105,
+      105
+     ],
+     "Variances": null,
+     "ID": 14,
+     "Sets": 5,
+     "Weight": 105,
+     "Date": "30/11/2022",
+     "Note": "",
+     "TotalWeight": 2600,
+     "AverageWeight": 104,
+     "AverageRep": 5,
+     "AverageWeightRepTotal": 520
+    },
+    {
+     "Reps": [
+      8,
+      8,
+      8,
+      8
+     ],
+     "Weights": [
+      45,
+      47.5,
+      47.7,
+      47.5
+     ],
+     "Variances": null,
+     "ID": 15,
+     "Sets": 4,
+     "Weight": 47.5,
+     "Date": "06/12/2022",
+     "Note": "",
+     "TotalWeight": 1501.6,
+     "AverageWeight": 46.925,
+     "AverageRep": 8,
+     "AverageWeightRepTotal": 375.4
+    }
+   ]
+  },
+  "Two-Arm Dumbell Row": {
+   "ID": 26,
+   "Iterations": [
+    {
+     "Reps": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "Weights": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "Variances": null,
+     "ID": 1,
+     "Sets": 5,
+     "Weight": 40,
+     "Date": "02/10/2022",
+     "Note": "",
+     "TotalWeight": 2000,
+     "AverageWeight": 40,
+     "AverageRep": 10,
+     "AverageWeightRepTotal": 400
+    }
+   ]
+  }
+ }
+}
