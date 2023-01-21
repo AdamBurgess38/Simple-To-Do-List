@@ -6,9 +6,7 @@ import (
 	"log"
 	"os"
 	"packages/exercise"
-	"packages/inputters"
 	"packages/sort"
-	"packages/startup"
 	"strconv"
 
 	"github.com/gofiber/fiber/v2"
@@ -79,94 +77,6 @@ func findExercise(exerciseRequested string) bool {
 	}
 	currentExercise = exerciseRequested;
 	return false;
-}
-
-func userInputDeleteExercise(){
-	printAllExceriseNames()
-	if(!updateCurrentExercise("State the name of the exercise you would like to delete")){
-		fmt.Printf("Exercise does not exist\n")
-		return; 
-	}
-	if(inputters.FetchBoolean(("Would you like the entire exercise" +  currentExercise + "or a single iteration of it?"))){
-		exercise.ViewAnExercise(userInfo, currentExercise, exercise.SimpleStats)
-		ID := inputters.FetchInteger("Please enter the ID you would like to delete", 10000);
-		if (exercise.UserDeletionRequest(userInfo, ID, currentExercise, exercise.ExerciseInstance)) {
-			fmt.Printf("Exercise instance deletion successful\n") 
-			return;
-		}
-		fmt.Printf("Exercise instance deletion unsuccessful, couldn't find ID\n")
-		return;
-	}
-	exercise.UserDeletionRequest(userInfo, 0, currentExercise, exercise.EntireExercise)
-}
-
-
-func userInputNewExercise(){
-	updateCurrentExercise("State the name of the exercise")
-	fmt.Println("Adding iteration of " , currentExercise);
-	weight := inputters.FetchDouble("Please state the weight you worked at");
-	constantWeight := inputters.FetchBoolean("Was the weight constant throughout?");
-	constantReps := inputters.FetchBoolean("Were the reps constant throughout?");
-	var reps []float64
-	var weights []float64
-	var sets int
-	if(constantWeight && constantReps){
-		rep := inputters.FetchDouble("And what was this value?");
-		sets := inputters.FetchInteger("For how many sets?",1000);
-		for sets != 0{
-			reps = append(reps, rep);
-			weights = append(weights, weight)
-			sets --;
-		}
-		
-	}
-	if(!constantWeight && constantReps){
-		rep := inputters.FetchDouble("And what was this value?");
-		weights = inputters.FetchArray("Please state the weight throughout the sets")
-		for x := 0; x < len(weights); x++{
-			reps = append(reps, rep)
-		}
-	}
-	if(constantWeight && !constantReps){
-		reps = inputters.FetchArray("Please state the reps throughout the sets")
-		for x := 0; x < len(weights); x++{
-			weights = append(weights, weight)
-		}
-	}
-	if(!constantWeight && !constantReps){
-		reps = inputters.FetchArray("Please state the reps throughout the sets")
-		weights = inputters.FetchArray("Please state the weight throughout the sets")
-	}
-	sets = len(reps);
-	var note string = ""
-	if(inputters.FetchBoolean("Would you like to leave a note?")){
-		note += inputters.FetchString("Please enter what you would like the note to be?")
-	}
-
-	var daysAgo = 0
-	if(!inputters.FetchBoolean("Did you perform this exercise today?")){
-		daysAgo = inputters.FetchInteger("How many days ago did you perform this exercise?", 365);
-	}
-	if(exercise.UserRequestNewIteration(userInfo, currentExercise, *exercise.UserTempIteration(reps, weights, sets, weight, 
-		-daysAgo,note))){
-			fmt.Println("Instance of " , currentExercise , " has been successfully added")
-			return;
-	}
-
-	fmt.Println("Instance of " , currentExercise , " has been unsuccessfully added due to the number of reps and weights not alligning")
-	
-}
-
-/*
-Backend only version.
-*/
-func userRequestToViewAnExercise(){
-	exists := updateCurrentExercise("What exercise would you like to view?")
-	if(!exists){
-		fmt.Printf("This exercise does not exist in your records, sorry");
-	}
-	choice := exercise.StatsFormat(inputters.FetchInteger("What format would you like?\n[1] Standard stats [2] Average overall [3] Simple stats  [4] Most recent", 4)-1);
-	fmt.Println(exercise.ViewAnExercise(userInfo, currentExercise, choice))
 }
 
 func addNewExerciseInstant(c *fiber.Ctx) error{
@@ -245,26 +155,6 @@ func userRequestToViewExerciseLog(c *fiber.Ctx) error{
 		return c.Status(401).SendString("Invalid exercise")
 	}
 	return c.JSON(exercise.ViewAnExercise(userInfo, currentExercise, exercise.StatsFormat(getRequest.StatsFormat)));
-}
-
-
-func coreFunctionLoop(){
-	var choice int
-	for{
-		choice = inputters.FetchInteger("[1] Add exercise instance [2] View an exercise [3] Delete an exercise [4] View all exercises [5] Save", 5)
-		switch choice {
-		case 1:
-			userInputNewExercise()
-		case 2:
-			userRequestToViewAnExercise()
-		case 3:
-			userInputDeleteExercise()
-		case 4:
-			//userRequestToViewAllExercises()
-		case 5:
-			startup.SaveUser(userInfo)
-		}
-	}
 }
 
 //Temp User set up....this will need to be changed when I support a user more than myself
