@@ -235,7 +235,7 @@ func UserRequestNewIteration(ue *UsersExercise, name string, x UserInput) bool{
 
 
 	addIteration(ue, name, *NewIteration(
-		x.Reps, x.Weights, Map(x.Weights, func(item float64) float64 { return item - x.Weight }), newID, 
+		x.Reps, x.Weights, Map(x.Weights, func(item float64) float64 { return (item - x.Weight )}), newID, 
 		len(x.Reps), 
 		x.Weight, 
 		strings.Replace((time.Now().Local().AddDate(0, 0, -x.DaysAgo)).Format("01-02-2006"),"/", ":", 2), 
