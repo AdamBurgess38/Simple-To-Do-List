@@ -15,6 +15,12 @@ type Exercise struct {
     Iterations []Iteration
 }
 
+type ReturnComparsion struct {
+	Date string
+	Value float64
+	ArrayOfValues []float64
+}
+
 type UserInput struct {
 	ExceriseName string `json:"name"`;
 	Reps []float64 `json:"reps"`
@@ -40,9 +46,22 @@ type Iteration struct {
 	AverageWeightRepTotal float64
 }
 
+type ExerciseAttribute int64
+const (
+	Reps ExerciseAttribute = iota
+	Weights     
+	Variances     
+	Sets 
+	Weight 
+	TotalWeight    
+	AverageWeight 
+	AverageRep
+	AverageWeightRepTotal
+)
+
+var AttributesList []int64 = []int64{0,1,2,3,4,5,6,7,8}
 type StatsFormat int64
 
-//0...n
 const (
 	StandardStats StatsFormat = iota
 	AverageOverall     
@@ -89,8 +108,67 @@ func FetchExerciseObject(ue *UsersExercise, requestedExercise string) []Iteratio
 
 func generateExerciseObject(ex Exercise) []Iteration{
 	return ex.Iterations;
-
 }
+
+
+/**
+	Use enum to find type each time, need to add enum to parameter
+	Create 2D array with a for loop, add then return the 2D array into a JSON
+	**/
+func GenerateComparisionObject(ue *UsersExercise, requestedExercise string, att ExerciseAttribute) []ReturnComparsion {
+	var returnArray []ReturnComparsion = []ReturnComparsion{};
+
+	entry, _ := ue.Exercises[requestedExercise]
+	
+	for _ , iter := range entry.Iterations {
+		returnArray = append(returnArray, ReturnComparsion{Date: iter.Date, Value: fetchValueOfIteration(iter, att), ArrayOfValues: nil})
+	}
+	return returnArray;
+}
+
+func fetchValueOfIteration(iter Iteration, att ExerciseAttribute) float64{
+	switch att {
+    case Weight:
+        return iter.Weight
+    case Sets:
+        return (float64)(iter.Sets)
+    case TotalWeight:
+        return iter.TotalWeight
+	case AverageWeight:
+        return iter.AverageWeight
+    case AverageRep:
+        return iter.AverageRep
+    case AverageWeightRepTotal:
+        return iter.AverageWeightRepTotal
+    }
+
+	return 0;
+}
+
+func enumToStringConverter(att ExerciseAttribute) string{
+	switch att {
+    case Weight:
+        return "Weight"
+    case Sets:
+        return "Sets"
+    case TotalWeight:
+        return "Total Weight"
+	case AverageWeight:
+        return "Average Weight"
+    case AverageRep:
+        return "Average Rep"
+	case Reps:
+        return "Reps"
+	case Weights:
+        return "Weights"
+	case AverageWeightRepTotal:
+        return "Average Weight Rep Total"
+	case Variances:
+        return "Variances"
+    }
+	return "INVALID ENUM";
+}
+
 
 func fetchStandardStats(ex Exercise) string{
 	returnString := ""

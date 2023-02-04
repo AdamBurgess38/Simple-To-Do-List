@@ -11,17 +11,16 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
+	"golang.org/x/exp/slices"
 )
-
-type ToDo struct{
-	ID int `json:id`
-	Title string `json:title`
-	Body string `json:body`
-	Done bool `json:done`
-}
 
 type GetRequest struct{
 	StatsFormat int `json:statsFormat`
+	ExceriseName string `json:exceriseName`
+}
+
+type CompareRequest struct{
+	ExceriseAttribute int64 `json:exceriseAttribute`
 	ExceriseName string `json:exceriseName`
 }
 
@@ -154,7 +153,30 @@ func userRequestToViewExerciseLog(c *fiber.Ctx) error{
 	if(!exists){
 		return c.Status(401).SendString("Invalid exercise")
 	}
-	return c.JSON(exercise.ViewAnExercise(userInfo, currentExercise, exercise.StatsFormat(getRequest.StatsFormat)));
+	return c.Status(200).JSON(exercise.ViewAnExercise(userInfo, currentExercise, exercise.StatsFormat(getRequest.StatsFormat)));
+}
+
+/*
+	NOT YET IMPLEMENTED
+*/
+func getJSONComparision(c *fiber.Ctx) error{
+	compareRequest := &CompareRequest{};
+	if err := c.BodyParser(compareRequest); err != nil{
+		return err;
+	}
+	exists := updateCurrentExercise(compareRequest.ExceriseName)
+
+	if(!exists){
+		return c.Status(401).SendString("Invalid exercise")
+	}
+	attributeExists := slices.Contains(exercise.AttributesList, compareRequest.ExceriseAttribute)
+	if(!attributeExists){
+		return c.Status(401).SendString("Invalid attribute")
+	}
+	//Need to link into GenerateComparisionObject function
+	returnArray := exercise.GenerateComparisionObject(userInfo, compareRequest.ExceriseName, exercise.ExerciseAttribute(compareRequest.ExceriseAttribute));
+	fmt.Println(returnArray)
+	return c.Status(200).JSON(returnArray)
 }
 
 //Temp User set up....this will need to be changed when I support a user more than myself
@@ -188,6 +210,7 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/api/getExerciseLog", userRequestToViewExerciseLog)
 	app.Get("/api/getExerciseAll", userGetsAllExerciseNames)
 	app.Get("/api/getJSONOfExcerise", getJSONOfExcerise)
+	app.Get("/api/getJSONComparision", getJSONComparision)
 	app.Get("/api/getJSONOfExceriseAll", getJSONOfExceriseAll)
 	app.Post("/api/addNewExerciseInstant", addNewExerciseInstant)
 	app.Post("/api/deleteEntireExercise", deleteEntireExercise)
