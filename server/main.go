@@ -196,67 +196,14 @@ func setupRoutes(app *fiber.App) {
 func main(){
 	userInfo = tempLoadUser()
 	initaliseListOfKeys()
-	//coreFunctionLoop()
-
 	fmt.Printf("Hello world!")
-
 	app := fiber.New()
-
-	todos := []ToDo{}
-
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "http://localhost:5173",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
-	//fmt.Println(todos[0])
-
-	
-
 	setupRoutes(app)
 
-	app.Post("/api/todos", func(c *fiber.Ctx) error{
-		todo := &ToDo{}
-
-		if err := c.BodyParser(todo); err != nil{
-			return err;
-		}
-
-		todo.ID = len(todos)+1
-
-		todos = append(todos, *todo)
-
-
-		
-		return c.JSON(todos)
-
-	})
-
-	app.Patch("/api/todos/:id/done", func(c *fiber.Ctx) error {
-		var ID int
-		ID, err := c.ParamsInt("id");
-		
-		if err != nil{
-			return c.Status(401).SendString("Invalid String")
-		}
-		
-
-		for i, t := range todos{
-			if (t.ID == ID){
-				todos[i].Done = true
-				break;
-			}
-		}
-		
-		return c.JSON(todos)
-	})
-
-
-	app.Get("/api/todos/", func(c *fiber.Ctx) error{
-
-		fmt.Println(todos)
-		fmt.Println(c.JSON(todos))
-		return c.JSON(todos)
-	})
 	log.Fatal(app.Listen(":4000"))
 }
