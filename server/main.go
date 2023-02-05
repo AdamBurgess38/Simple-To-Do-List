@@ -92,7 +92,7 @@ func addNewExerciseInstant(c *fiber.Ctx) error{
 			if(!exists){
 				initaliseListOfKeys()
 			}
-			return c.SendString("OK")
+			return c.Status(200).SendString("OK")
 	}
 	return c.Status(401).SendString("Error creating exercise") ;
 	
@@ -117,15 +117,15 @@ func deleteEntireExercise(c *fiber.Ctx) error{
 	}
 	exercise.UserDeletionRequest(userInfo, 0, currentExercise, exercise.EntireExercise)
 	initaliseListOfKeys()
-	return c.SendString("OK");
+	return c.Status(200).SendString("OK");
 }
 
 func userGetsAllExerciseNames(c *fiber.Ctx) error{
-	return c.JSON(keys)
+	return c.Status(200).JSON(keys)
 }
 
 func getJSONOfExceriseAll(c *fiber.Ctx) error{
-	return c.JSON(userInfo.Exercises)
+	return c.Status(200).JSON(userInfo.Exercises)
 }
 
 func getJSONOfExcerise(c *fiber.Ctx) error{
@@ -137,7 +137,7 @@ func getJSONOfExcerise(c *fiber.Ctx) error{
 	if(!exists){
 		return c.Status(401).SendString("Invalid exercise")
 	}
-	return c.JSON(exercise.FetchExerciseObject(userInfo, currentExercise))
+	return c.Status(200).JSON(exercise.FetchExerciseObject(userInfo, currentExercise))
 }
 
 /*
