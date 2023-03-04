@@ -3,14 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"log"
+	"net/http"
 	"os"
 	"packages/exercise"
 	"packages/sort"
 	"strconv"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cors"
 	"golang.org/x/exp/slices"
 )
 
@@ -219,14 +218,19 @@ func setupRoutes(app *fiber.App) {
 func main(){
 	userInfo = tempLoadUser()
 	initaliseListOfKeys()
-	fmt.Printf("Hello world!")
-	app := fiber.New()
-	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173",
-		AllowHeaders: "Origin, Content-Type, Accept",
-	}))
 
-	setupRoutes(app)
+	http.HandleFunc("/healthcheck" , func(w http.ResponseWriter, r *http.Request){
+		w.Write([]byte("Hello World!"))
+		
+	})
+	// fmt.Printf("Hello world!")
+	// app := fiber.New()
+	// app.Use(cors.New(cors.Config{
+	// 	AllowOrigins: "http://localhost:5173",
+	// 	AllowHeaders: "Origin, Content-Type, Accept",
+	// }))
 
-	log.Fatal(app.Listen(":4000"))
+	// setupRoutes(app)
+		http.ListenAndServe(":8000", nil);
+	// log.Fatal(app.Listen(":4000"))
 }
