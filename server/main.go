@@ -3,9 +3,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"packages/exercise"
+	"packages/logger"
 	"packages/sort"
 	"strconv"
 
@@ -67,7 +70,7 @@ func updateCurrentExercise(newName string) bool{
 
 func findExercise(exerciseRequested string) bool {
 	for v, d := range keys{
-		fmt.Println(v, exerciseRequested, d)
+		//fmt.Println(v, exerciseRequested, d)
 		if(strconv.Itoa(v) == exerciseRequested || d == exerciseRequested){
 			currentExercise = d;
 			return true;
@@ -123,6 +126,23 @@ func userGetsAllExerciseNames(c *fiber.Ctx) error{
 	return c.Status(200).JSON(keys)
 }
 
+func userGetsAllExerciseNamesMainHTTP(w http.ResponseWriter, r *http.Request){
+	jsonData, err := json.Marshal(keys);
+
+	if(err != nil){
+		logger.LogError(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+
+	w.WriteHeader(200);
+	w.Header().Set("Content-Type", "application/json");
+	w.WriteHeader(http.StatusOK);
+	w.Write(jsonData)
+}
+
 func getJSONOfExceriseAll(c *fiber.Ctx) error{
 	return c.Status(200).JSON(userInfo.Exercises)
 }
@@ -153,6 +173,52 @@ func userRequestToViewExerciseLog(c *fiber.Ctx) error{
 		return c.Status(401).SendString("Invalid exercise")
 	}
 	return c.Status(200).JSON(exercise.ViewAnExercise(userInfo, currentExercise, exercise.StatsFormat(getRequest.StatsFormat)));
+}
+
+func userRequestToViewExerciseLogMainHTTP(w http.ResponseWriter, r *http.Request){
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var data GetRequest
+
+	err = json.Unmarshal(body, &data);
+
+	
+	defer r.Body.Close()
+	if err != nil {
+		logger.LogError(err)
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+	
+
+	fmt.Println(data)
+
+	exists := updateCurrentExercise(data.ExceriseName)
+
+	if(!exists){
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte("This exercise name does not exist"));
+		logger.LogInfo(http.StatusBadRequest, "Excerise name does not exist for user")
+	}
+
+	jsonData, err := json.Marshal(exercise.ViewAnExercise(userInfo, currentExercise, exercise.StatsFormat(data.StatsFormat)))
+
+	if(err != nil){
+		logger.LogError(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK);
+
+	w.Write(jsonData);
+
 }
 
 /*
@@ -215,14 +281,25 @@ func setupRoutes(app *fiber.App) {
 	app.Post("/api/deleteEntireExercise", deleteEntireExercise)
 }
 
+func setUpRoutesMainLine(){
+	http.HandleFunc("/healthcheck" , func(w http.ResponseWriter, r *http.Request){
+		//body, err := ioutil.ReadAll(r.Body)
+		w.Write([]byte("Hello World! We will build the rest of this tomorrow!"))
+	})
+
+	http.HandleFunc("/api/getExerciseLog", userRequestToViewExerciseLogMainHTTP)
+	http.HandleFunc("/api/getExerciseAll", userGetsAllExerciseNamesMainHTTP)
+}
+
 func main(){
+	logger.InitLogger()
 	userInfo = tempLoadUser()
 	initaliseListOfKeys()
 
-	http.HandleFunc("/healthcheck" , func(w http.ResponseWriter, r *http.Request){
-		w.Write([]byte("Hello World!"))
-		
-	})
+	setUpRoutesMainLine();
+	http.ListenAndServe(":8000", nil);
+	//This is the basis for everything
+
 	// fmt.Printf("Hello world!")
 	// app := fiber.New()
 	// app.Use(cors.New(cors.Config{
@@ -231,6 +308,6 @@ func main(){
 	// }))
 
 	// setupRoutes(app)
-		http.ListenAndServe(":8000", nil);
+	
 	// log.Fatal(app.Listen(":4000"))
 }

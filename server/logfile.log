@@ -1,0 +1,10 @@
+ERROR: 2023/04/08 09:06:09 logger.go:43: /Users/adamburgess/Desktop/Coding/5 Projects 2023/to-do-applicaton/server/main.go:174 - 
+ERROR: 2023/04/08 09:06:09 logger.go:44: 1
+ERROR: 2023/04/08 09:06:10 logger.go:43: /Users/adamburgess/Desktop/Coding/5 Projects 2023/to-do-applicaton/server/main.go:174 - 
+ERROR: 2023/04/08 09:06:10 logger.go:44: 1
+ERROR: 2023/04/08 09:06:22 logger.go:43: /Users/adamburgess/Desktop/Coding/5 Projects 2023/to-do-applicaton/server/main.go:174 - 
+ERROR: 2023/04/08 09:06:22 logger.go:44: unexpected end of JSON input
+ERROR: 2023/04/08 09:06:23 logger.go:43: /Users/adamburgess/Desktop/Coding/5 Projects 2023/to-do-applicaton/server/main.go:174 - 
+ERROR: 2023/04/08 09:06:23 logger.go:44: unexpected end of JSON input
+ERROR: 2023/04/08 09:14:22 logger.go:43: /Users/adamburgess/Desktop/Coding/5 Projects 2023/to-do-applicaton/server/main.go:174 - 
+ERROR: 2023/04/08 09:14:22 logger.go:44: unexpected end of JSON input
