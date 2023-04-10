@@ -278,6 +278,60 @@ func userRequestToViewExerciseLogMainHTTP(w http.ResponseWriter, r *http.Request
 /*
 	NOT YET IMPLEMENTED
 */
+func getJSONComparisionMainHTTP(w http.ResponseWriter, r *http.Request) {
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var data CompareRequest
+
+	err = json.Unmarshal(body, &data);
+
+	
+	defer r.Body.Close()
+	if err != nil {
+		logger.LogError(err)
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+	exists := updateCurrentExercise(data.ExceriseName)
+
+	if(!exists){
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte("Invalid exercise"));
+		logger.LogInfo(http.StatusBadRequest, "Excerise name does not exist for user")
+		return;
+	}
+	attributeExists := slices.Contains(exercise.AttributesList, data.ExceriseAttribute)
+	if(!attributeExists){
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte("Invalid attribute"));
+		logger.LogInfo(http.StatusBadRequest, "Excerise name does not exist for user")
+		return;
+	}
+	//Need to link into GenerateComparisionObject function
+	returnArray := exercise.GenerateComparisionObject(userInfo, data.ExceriseName, exercise.ExerciseAttribute(data.ExceriseAttribute));
+	fmt.Println(returnArray)
+	
+	jsonData, err := json.Marshal(returnArray);
+
+	if(err != nil){
+		logger.LogError(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK);
+
+	w.Write(jsonData);
+
+}
+
 func getJSONComparision(c *fiber.Ctx) error{
 	compareRequest := &CompareRequest{};
 	if err := c.BodyParser(compareRequest); err != nil{
@@ -297,6 +351,7 @@ func getJSONComparision(c *fiber.Ctx) error{
 	fmt.Println(returnArray)
 	return c.Status(200).JSON(returnArray)
 }
+
 
 //Temp User set up....this will need to be changed when I support a user more than myself
 	//With the addition of an ID to represent the user...rather than looking for the name = x x.json.
@@ -345,6 +400,8 @@ func setUpRoutesMainLine(){
 	http.HandleFunc("/api/getExerciseAll", userGetsAllExerciseNamesMainHTTP)
 	http.HandleFunc("/api/getJSONOfExcerise", getJSONOfExceriseMainHTTP)
 	http.HandleFunc("/api/getJSONOfExceriseAll", getJSONOfExceriseAllMainHTTP)
+
+	http.HandleFunc("/api/getJSONComparision", getJSONComparisionMainHTTP);
 }
 
 func main(){
