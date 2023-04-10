@@ -136,8 +136,6 @@ func userGetsAllExerciseNamesMainHTTP(w http.ResponseWriter, r *http.Request){
 		return;
 	}
 
-
-	w.WriteHeader(200);
 	w.Header().Set("Content-Type", "application/json");
 	w.WriteHeader(http.StatusOK);
 	w.Write(jsonData)
@@ -157,6 +155,64 @@ func getJSONOfExcerise(c *fiber.Ctx) error{
 		return c.Status(401).SendString("Invalid exercise")
 	}
 	return c.Status(200).JSON(exercise.FetchExerciseObject(userInfo, currentExercise))
+}
+
+func getJSONOfExceriseAllMainHTTP(w http.ResponseWriter, r *http.Request){
+	jsonData, err := json.Marshal(userInfo.Exercises);
+
+	if(err != nil){
+		logger.LogError(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+	w.Header().Set("Content-Type", "application/json");
+	w.WriteHeader(http.StatusOK);
+	w.Write(jsonData)
+}
+
+func getJSONOfExceriseMainHTTP(w http.ResponseWriter, r *http.Request){
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var data GetRequest
+
+	err = json.Unmarshal(body, &data);
+
+	
+	defer r.Body.Close()
+	if err != nil {
+		logger.LogError(err)
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+	
+
+	exists := updateCurrentExercise(data.ExceriseName)
+
+	if(!exists){
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte("This exercise name does not exist"));
+		logger.LogInfo(http.StatusBadRequest, "Excerise name does not exist for user")
+	}
+
+	jsonData, err := json.Marshal(exercise.FetchExerciseObject(userInfo,currentExercise));
+
+	if(err != nil){
+		logger.LogError(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK);
+
+	w.Write(jsonData);
 }
 
 /*
@@ -194,8 +250,6 @@ func userRequestToViewExerciseLogMainHTTP(w http.ResponseWriter, r *http.Request
 		return;
 	}
 	
-
-	fmt.Println(data)
 
 	exists := updateCurrentExercise(data.ExceriseName)
 
@@ -289,6 +343,8 @@ func setUpRoutesMainLine(){
 
 	http.HandleFunc("/api/getExerciseLog", userRequestToViewExerciseLogMainHTTP)
 	http.HandleFunc("/api/getExerciseAll", userGetsAllExerciseNamesMainHTTP)
+	http.HandleFunc("/api/getJSONOfExcerise", getJSONOfExceriseMainHTTP)
+	http.HandleFunc("/api/getJSONOfExceriseAll", getJSONOfExceriseAllMainHTTP)
 }
 
 func main(){
@@ -297,7 +353,7 @@ func main(){
 	initaliseListOfKeys()
 
 	setUpRoutesMainLine();
-	http.ListenAndServe(":8000", nil);
+	http.ListenAndServe(":8080", nil);
 	//This is the basis for everything
 
 	// fmt.Printf("Hello world!")
