@@ -90,7 +90,7 @@ func addNewExerciseInstant(c *fiber.Ctx) error{
 	
 	if(exercise.UserRequestNewIteration(userInfo, currentExercise, *exercise.UserTempIteration(userInput.Reps, userInput.Weights, userInput.Sets, userInput.Weight, 
 		userInput.DaysAgo ,userInput.Note))){
-			fmt.Println("Instance of ", currentExercise ," has been successfully added")
+			logger.LogInfo("Instance of ", currentExercise ," has been successfully added");
 			if(!exists){
 				initaliseListOfKeys()
 			}
@@ -99,6 +99,46 @@ func addNewExerciseInstant(c *fiber.Ctx) error{
 	return c.Status(401).SendString("Error creating exercise") ;
 	
 }
+
+
+func addNewExerciseInstantMainHTTP(w http.ResponseWriter, r *http.Request){
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var data exercise.UserInput
+
+	err = json.Unmarshal(body, &data);
+
+	
+	defer r.Body.Close()
+	if err != nil {
+		logger.LogError(err)
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+	exists := updateCurrentExercise(data.ExceriseName);
+	
+	if(exercise.UserRequestNewIteration(userInfo, currentExercise, *exercise.UserTempIteration(data.Reps, data.Weights, data.Sets, data.Weight, 
+		data.DaysAgo ,data.Note))){
+			logger.LogInfo("Instance of ", currentExercise ," has been successfully added");
+			if(!exists){
+				initaliseListOfKeys()
+			}
+			w.Header().Set("Content-Type", "application/json");
+			w.WriteHeader(http.StatusOK);
+			return;
+	}
+
+	w.WriteHeader(http.StatusBadRequest)
+	w.Write([]byte("Fail to add exercise iteration."));
+	logger.LogInfo(http.StatusBadRequest, "Fail to add exercise iteration.")
+	
+}
+
 
 func deleteEntireExercise(c *fiber.Ctx) error{
 	deleteRequest := &DeleteRequest{}
@@ -402,6 +442,8 @@ func setUpRoutesMainLine(){
 	http.HandleFunc("/api/getJSONOfExceriseAll", getJSONOfExceriseAllMainHTTP)
 
 	http.HandleFunc("/api/getJSONComparision", getJSONComparisionMainHTTP);
+
+	http.HandleFunc("/api/addNewExerciseInstant", addNewExerciseInstantMainHTTP);
 }
 
 func main(){
