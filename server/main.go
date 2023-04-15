@@ -139,6 +139,52 @@ func addNewExerciseInstantMainHTTP(w http.ResponseWriter, r *http.Request){
 	
 }
 
+func deleteEntireExerciseMainHTTP(w http.ResponseWriter, r *http.Request){
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var data DeleteRequest
+
+	err = json.Unmarshal(body, &data);
+
+	
+	defer r.Body.Close()
+	if err != nil {
+		logger.LogError(err)
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte(err.Error()));
+		return;
+	}
+
+	exists := findExercise(data.ExceriseName)
+	if(!exists){
+		logger.LogInfo("Invalid exercise", data.ExceriseName)
+		w.WriteHeader(http.StatusBadRequest)
+		return;
+	}
+	if(!data.WholeExcerise){
+			if (exercise.UserDeletionRequest(userInfo, data.ID, currentExercise, exercise.ExerciseInstance)) {
+				logger.LogInfo("Exercise", data.ExceriseName ,"instance deletion successful (ID) ", data.ID) 
+				w.Header().Set("Content-Type", "application/json");
+				w.WriteHeader(http.StatusOK);
+				w.Write([]byte("Exercise instance odeletion successful"));
+				return;
+			}
+			logger.LogInfo("Exercise instance deletion unsuccessful (",data.ExceriseName,"), couldn't find ID: ",data.ID," \n")
+			w.WriteHeader(http.StatusBadRequest)
+			w.Write([]byte("Invalid ID " +  strconv.Itoa(data.ID) + " For " + data.ExceriseName ));
+			return;
+	}
+
+	exercise.UserDeletionRequest(userInfo, 0, currentExercise, exercise.EntireExercise)
+	initaliseListOfKeys();
+	w.WriteHeader(http.StatusOK);
+	w.Write([]byte("Exercise successfully deleted"));
+}
+
+
 
 func deleteEntireExercise(c *fiber.Ctx) error{
 	deleteRequest := &DeleteRequest{}
@@ -152,6 +198,7 @@ func deleteEntireExercise(c *fiber.Ctx) error{
 	if(!deleteRequest.WholeExcerise){
 			if (exercise.UserDeletionRequest(userInfo, deleteRequest.ID, currentExercise, exercise.ExerciseInstance)) {
 				fmt.Printf("Exercise instance deletion successful\n") 
+				
 				return c.SendString("OK");
 			}
 			fmt.Printf("Exercise instance deletion unsuccessful, couldn't find ID\n")
@@ -349,7 +396,7 @@ func getJSONComparisionMainHTTP(w http.ResponseWriter, r *http.Request) {
 	if(!attributeExists){
 		w.WriteHeader(http.StatusBadRequest)
 		w.Write([]byte("Invalid attribute"));
-		logger.LogInfo(http.StatusBadRequest, "Excerise name does not exist for user")
+		logger.LogInfo(http.StatusBadRequest, "Invalid Attribute")
 		return;
 	}
 	//Need to link into GenerateComparisionObject function
@@ -444,6 +491,8 @@ func setUpRoutesMainLine(){
 	http.HandleFunc("/api/getJSONComparision", getJSONComparisionMainHTTP);
 
 	http.HandleFunc("/api/addNewExerciseInstant", addNewExerciseInstantMainHTTP);
+
+	http.HandleFunc("/api/deleteEntireExercise",deleteEntireExerciseMainHTTP);
 }
 
 func main(){
