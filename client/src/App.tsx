@@ -15,63 +15,95 @@ export interface ToDo{
   Done: boolean;
 } 
 
-export const ENDPOINTGOLANG = "http://localhost:4000";
+export const ENDPOINTGOLANG = "http://localhost:8080";
 
 const fetcher = (url: string) =>
   fetch(`${ENDPOINTGOLANG}/${url}`).then((r) => r.json());
 
 function App() {
-  const { data, mutate } = useSWR<ToDo[]>("api/todos", fetcher);
+  let headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  headers.append('Accept', 'application/json');
+
+  // headers.append('Access-Control-Allow-Credentials', 'true');
+
+
+
+  fetch(ENDPOINTGOLANG+'/healthcheck',{
+    headers: headers})
+    .then(response => {
+      // console.log(response.json())
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
+      if(!reader){ return}
+      return reader.read().then(function processText({ done, value }) : any{
+        if (done) {
+          return;
+        }
   
-  async function markTodoAdDone(id: number) {
-    const updated = await fetch(`${ENDPOINTGOLANG}/api/todos/${id}/done`, {
-      method: "PATCH",
-    }).then((r) => r.json());
+        const data = decoder.decode(value);
+        console.log(data);
+  
+        return JSON.parse(data);}
+      )})
+    .then(data => {
+      console.log(data)
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
 
-    console.log(updated)
-    mutate(updated);
-  }
+  // const { data, mutate } = useSWR<ToDo[]>("api/", fetcher);
+  
+  // async function markTodoAdDone(id: number) {
+  //   const updated = await fetch(`${ENDPOINTGOLANG}/api/todos/${id}/done`, {
+  //     method: "PATCH",
+  //   }).then((r) => r.json());
 
-  return (
-    <Box
-      sx={(theme) => ({
-        padding: "2rem",
-        width: "100%",
-        maxWidth: "40rem",
-        margin: "0 auto",
-      })}
-    >
-      <List spacing="xs" size="sm" mb={12} center>
-        {data?.map((todo) => {
-          console.log(todo)
-          console.log(todo.ID)
-          console.log(todo.Title)
-          console.log(todo.Body)
-          return (
-            <List.Item
-              key={`todo_list__${todo.ID}`}
-              onClick={() => markTodoAdDone(todo.ID)}
-              icon={
-                todo.Done ? (
-                  <ThemeIcon color="teal" size={24} radius="xl">
-                    <CheckCircleFillIcon size={20} />
-                  </ThemeIcon>
-                ) : (
-                  <ThemeIcon color="gray" size={24} radius="xl">
-                    <CheckCircleFillIcon size={20} />
-                  </ThemeIcon>
-                )
-              }
-            >
-              {todo.Body}
-            </List.Item>
-          );
-        })}
-      </List>
+  //   console.log(updated)
+  //   mutate(updated);
+  // }
 
-      <AddToDo mutate={mutate} />
-    </Box>
-  );
+  // return (
+  //   <Box
+  //     sx={(theme) => ({
+  //       padding: "2rem",
+  //       width: "100%",
+  //       maxWidth: "40rem",
+  //       margin: "0 auto",
+  //     })}
+  //   >
+  //     <List spacing="xs" size="sm" mb={12} center>
+  //       {data?.map((todo) => {
+  //         console.log(todo)
+  //         console.log(todo.ID)
+  //         console.log(todo.Title)
+  //         console.log(todo.Body)
+  //         return (
+  //           <List.Item
+  //             key={`todo_list__${todo.ID}`}
+  //             onClick={() => markTodoAdDone(todo.ID)}
+  //             icon={
+  //               todo.Done ? (
+  //                 <ThemeIcon color="teal" size={24} radius="xl">
+  //                   <CheckCircleFillIcon size={20} />
+  //                 </ThemeIcon>
+  //               ) : (
+  //                 <ThemeIcon color="gray" size={24} radius="xl">
+  //                   <CheckCircleFillIcon size={20} />
+  //                 </ThemeIcon>
+  //               )
+  //             }
+  //           >
+  //             {todo.Body}
+  //           </List.Item>
+  //         );
+  //       })}
+  //     </List>
+
+  //     <AddToDo mutate={mutate} />
+  //   </Box>
+  // );
 }
 
 export default App;

@@ -480,7 +480,12 @@ func setupRoutes(app *fiber.App) {
 func setUpRoutesMainLine(){
 	http.HandleFunc("/healthcheck" , func(w http.ResponseWriter, r *http.Request){
 		//body, err := ioutil.ReadAll(r.Body)
-		w.Write([]byte("Hello World! We will build the rest of this tomorrow!"))
+		
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		data, _ := json.Marshal(userInfo.Exercises)
+		w.Header().Add("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+		w.Header().Add("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+		w.Write(data)
 	})
 
 	http.HandleFunc("/api/getExerciseLog", userRequestToViewExerciseLogMainHTTP)
@@ -502,6 +507,7 @@ func main(){
 
 	setUpRoutesMainLine();
 	http.ListenAndServe(":8080", nil);
+
 	//This is the basis for everything
 
 	// fmt.Printf("Hello world!")
